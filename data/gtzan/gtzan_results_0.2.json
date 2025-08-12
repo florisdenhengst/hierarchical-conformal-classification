@@ -1,0 +1,6495 @@
+{
+    "0": {
+        "content": 3169.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "2": {
+        "content": 624.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "3": {
+        "content": 4037.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "4": {
+        "content": 969.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "5": {
+        "content": 803.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "6": {
+        "content": 3908.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "7": {
+        "content": 3631.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "8": {
+        "content": 1432.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "9": {
+        "content": 3679.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "10": {
+        "content": 2422.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "11": {
+        "content": 4846.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "12": {
+        "content": 1374.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "14": {
+        "content": 228.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "15": {
+        "content": 3656.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "16": {
+        "content": 4436.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "17": {
+        "content": 471.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "19": {
+        "content": 279.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "20": {
+        "content": 733.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "21": {
+        "content": 1877.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "22": {
+        "content": 1632.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "23": {
+        "content": 1413.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "24": {
+        "content": 501.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "25": {
+        "content": 765.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "26": {
+        "content": 4601.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "28": {
+        "content": 1665.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n"
+        ]
+    },
+    "29": {
+        "content": 2906.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "30": {
+        "content": 4321.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "31": {
+        "content": 29.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "32": {
+        "content": 3865.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "33": {
+        "content": 4183.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "35": {
+        "content": 1526.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "36": {
+        "content": 4831.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "37": {
+        "content": 2123.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "39": {
+        "content": 1047.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "40": {
+        "content": 4036.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "41": {
+        "content": 3755.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "42": {
+        "content": 4838.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "43": {
+        "content": 4370.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "44": {
+        "content": 1391.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "45": {
+        "content": 373.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "46": {
+        "content": 2917.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "47": {
+        "content": 4852.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "48": {
+        "content": 23.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "49": {
+        "content": 199.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "50": {
+        "content": 4203.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "51": {
+        "content": 1491.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "52": {
+        "content": 1519.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "53": {
+        "content": 4604.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "54": {
+        "content": 1221.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "55": {
+        "content": 1425.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "56": {
+        "content": 4328.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "57": {
+        "content": 65.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "61": {
+        "content": 915.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "62": {
+        "content": 2015.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "63": {
+        "content": 1932.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "64": {
+        "content": 553.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "65": {
+        "content": 2770.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "66": {
+        "content": 1427.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "67": {
+        "content": 4628.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "68": {
+        "content": 4839.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "69": {
+        "content": 756.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "70": {
+        "content": 3467.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "72": {
+        "content": 4700.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "74": {
+        "content": 3931.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "75": {
+        "content": 179.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "76": {
+        "content": 1803.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "78": {
+        "content": 4671.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "79": {
+        "content": 157.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "81": {
+        "content": 2292.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "82": {
+        "content": 655.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "83": {
+        "content": 1820.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "85": {
+        "content": 4129.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "88": {
+        "content": 3109.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "89": {
+        "content": 79.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "90": {
+        "content": 1371.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "91": {
+        "content": 952.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "92": {
+        "content": 4567.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "93": {
+        "content": 3132.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "94": {
+        "content": 422.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "95": {
+        "content": 472.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "96": {
+        "content": 538.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "98": {
+        "content": 4528.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "99": {
+        "content": 4854.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "100": {
+        "content": 1918.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "101": {
+        "content": 4581.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "103": {
+        "content": 248.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "104": {
+        "content": 3752.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "105": {
+        "content": 4194.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "106": {
+        "content": 561.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-blues-synset-0-n"
+        ]
+    },
+    "107": {
+        "content": 1451.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "108": {
+        "content": 3264.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "109": {
+        "content": 1837.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "112": {
+        "content": 3722.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "114": {
+        "content": 3243.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "115": {
+        "content": 1117.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "117": {
+        "content": 3456.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "118": {
+        "content": 497.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "120": {
+        "content": 2462.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "121": {
+        "content": 3203.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "122": {
+        "content": 4600.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "123": {
+        "content": 3509.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "124": {
+        "content": 3610.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "125": {
+        "content": 2268.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "127": {
+        "content": 1168.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "128": {
+        "content": 1732.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "130": {
+        "content": 3819.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "131": {
+        "content": 3102.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "132": {
+        "content": 1539.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "133": {
+        "content": 3317.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "135": {
+        "content": 1049.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "137": {
+        "content": 1181.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "138": {
+        "content": 1554.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "139": {
+        "content": 1242.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "140": {
+        "content": 2810.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "142": {
+        "content": 3501.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "143": {
+        "content": 4355.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "144": {
+        "content": 1840.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "145": {
+        "content": 468.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "146": {
+        "content": 8.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "147": {
+        "content": 4654.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "148": {
+        "content": 1255.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "149": {
+        "content": 805.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "150": {
+        "content": 144.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "151": {
+        "content": 2651.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "152": {
+        "content": 1595.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "153": {
+        "content": 1654.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "155": {
+        "content": 151.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "156": {
+        "content": 2172.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "157": {
+        "content": 4675.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "158": {
+        "content": 3837.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "159": {
+        "content": 2121.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "160": {
+        "content": 4346.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "162": {
+        "content": 4861.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "163": {
+        "content": 2688.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "164": {
+        "content": 465.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "166": {
+        "content": 168.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "167": {
+        "content": 4251.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "168": {
+        "content": 2457.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "170": {
+        "content": 3230.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "171": {
+        "content": 4243.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "172": {
+        "content": 4114.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "173": {
+        "content": 4209.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "174": {
+        "content": 100.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "175": {
+        "content": 3352.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "176": {
+        "content": 881.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "177": {
+        "content": 2483.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "178": {
+        "content": 2111.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "179": {
+        "content": 4087.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "180": {
+        "content": 4989.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "182": {
+        "content": 393.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "184": {
+        "content": 1756.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "185": {
+        "content": 2344.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-blues-synset-0-n"
+        ]
+    },
+    "186": {
+        "content": 1946.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "187": {
+        "content": 491.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "188": {
+        "content": 1338.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "189": {
+        "content": 2303.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "190": {
+        "content": 3739.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "192": {
+        "content": 2275.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "193": {
+        "content": 2210.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "194": {
+        "content": 3286.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "195": {
+        "content": 1942.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "197": {
+        "content": 2673.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "198": {
+        "content": 1626.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "200": {
+        "content": 3668.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "201": {
+        "content": 4851.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "202": {
+        "content": 3853.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "203": {
+        "content": 1592.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "204": {
+        "content": 3868.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "205": {
+        "content": 1717.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "210": {
+        "content": 859.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "211": {
+        "content": 1578.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "212": {
+        "content": 3883.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "214": {
+        "content": 3392.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "215": {
+        "content": 3027.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "216": {
+        "content": 2078.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "217": {
+        "content": 2699.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "218": {
+        "content": 3165.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "219": {
+        "content": 3491.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "220": {
+        "content": 4148.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "221": {
+        "content": 3074.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "222": {
+        "content": 4689.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "223": {
+        "content": 4358.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "224": {
+        "content": 4441.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "226": {
+        "content": 4046.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "227": {
+        "content": 724.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "229": {
+        "content": 949.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "230": {
+        "content": 626.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "231": {
+        "content": 1876.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "232": {
+        "content": 533.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "233": {
+        "content": 2486.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "234": {
+        "content": 3492.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "236": {
+        "content": 2416.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "239": {
+        "content": 1743.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n"
+        ]
+    },
+    "240": {
+        "content": 1723.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "241": {
+        "content": 1514.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "242": {
+        "content": 677.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "243": {
+        "content": 3683.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "244": {
+        "content": 4374.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "245": {
+        "content": 4063.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "246": {
+        "content": 2833.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "247": {
+        "content": 764.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "248": {
+        "content": 1650.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "249": {
+        "content": 426.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "251": {
+        "content": 1044.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "252": {
+        "content": 3036.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "253": {
+        "content": 1010.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "254": {
+        "content": 1103.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "255": {
+        "content": 2894.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "256": {
+        "content": 763.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "257": {
+        "content": 999.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "259": {
+        "content": 642.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "260": {
+        "content": 3958.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "262": {
+        "content": 4030.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "263": {
+        "content": 149.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "264": {
+        "content": 296.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "265": {
+        "content": 1859.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n"
+        ]
+    },
+    "266": {
+        "content": 486.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "267": {
+        "content": 12.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "268": {
+        "content": 2473.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "269": {
+        "content": 3478.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "270": {
+        "content": 1480.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "272": {
+        "content": 4207.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "273": {
+        "content": 4617.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "274": {
+        "content": 414.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "275": {
+        "content": 833.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "276": {
+        "content": 1832.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "278": {
+        "content": 4504.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "281": {
+        "content": 4952.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "283": {
+        "content": 544.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "284": {
+        "content": 584.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "285": {
+        "content": 4278.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "286": {
+        "content": 681.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "287": {
+        "content": 3926.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "288": {
+        "content": 2877.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "289": {
+        "content": 3442.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "291": {
+        "content": 2417.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "292": {
+        "content": 485.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "293": {
+        "content": 1200.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "294": {
+        "content": 132.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "295": {
+        "content": 1108.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "297": {
+        "content": 931.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "298": {
+        "content": 1149.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "299": {
+        "content": 2857.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "301": {
+        "content": 1090.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "302": {
+        "content": 287.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "303": {
+        "content": 3652.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "304": {
+        "content": 3105.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "306": {
+        "content": 4786.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "307": {
+        "content": 926.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "308": {
+        "content": 1606.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "309": {
+        "content": 1873.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "311": {
+        "content": 2634.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "312": {
+        "content": 2902.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "314": {
+        "content": 2036.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "315": {
+        "content": 1135.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "316": {
+        "content": 746.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "317": {
+        "content": 3038.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "319": {
+        "content": 3889.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "320": {
+        "content": 4559.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "322": {
+        "content": 4778.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "323": {
+        "content": 1360.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "324": {
+        "content": 829.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "326": {
+        "content": 2629.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "327": {
+        "content": 2664.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "328": {
+        "content": 1670.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "329": {
+        "content": 3764.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "330": {
+        "content": 633.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "331": {
+        "content": 3338.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "332": {
+        "content": 1187.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "333": {
+        "content": 3244.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "334": {
+        "content": 1210.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "336": {
+        "content": 1730.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "337": {
+        "content": 589.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "338": {
+        "content": 3689.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "339": {
+        "content": 3055.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "340": {
+        "content": 2521.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "342": {
+        "content": 3349.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "343": {
+        "content": 2792.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "344": {
+        "content": 856.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "345": {
+        "content": 3331.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "346": {
+        "content": 290.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "347": {
+        "content": 3288.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "349": {
+        "content": 4494.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "350": {
+        "content": 350.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "351": {
+        "content": 2487.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "352": {
+        "content": 720.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "353": {
+        "content": 1786.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "354": {
+        "content": 90.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "355": {
+        "content": 1550.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "356": {
+        "content": 1421.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "357": {
+        "content": 657.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "360": {
+        "content": 3790.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "362": {
+        "content": 3685.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "363": {
+        "content": 3935.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "364": {
+        "content": 734.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "365": {
+        "content": 2073.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "366": {
+        "content": 3199.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "367": {
+        "content": 2714.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "368": {
+        "content": 2114.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "369": {
+        "content": 2197.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "370": {
+        "content": 254.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "371": {
+        "content": 4025.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "373": {
+        "content": 742.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "374": {
+        "content": 4304.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "375": {
+        "content": 2859.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "376": {
+        "content": 1589.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "377": {
+        "content": 429.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "378": {
+        "content": 4740.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "379": {
+        "content": 4640.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "380": {
+        "content": 315.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "381": {
+        "content": 2767.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "382": {
+        "content": 3678.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "383": {
+        "content": 4903.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "384": {
+        "content": 2603.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "385": {
+        "content": 3107.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "386": {
+        "content": 69.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "389": {
+        "content": 1620.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "390": {
+        "content": 4742.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "392": {
+        "content": 4010.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "393": {
+        "content": 2924.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "394": {
+        "content": 2287.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "396": {
+        "content": 2167.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "398": {
+        "content": 4621.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "399": {
+        "content": 4252.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "400": {
+        "content": 387.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "401": {
+        "content": 2242.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-blues-synset-0-n"
+        ]
+    },
+    "404": {
+        "content": 4637.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "406": {
+        "content": 3592.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "407": {
+        "content": 109.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "408": {
+        "content": 2932.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "410": {
+        "content": 3881.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "411": {
+        "content": 2586.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "412": {
+        "content": 3133.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "413": {
+        "content": 2495.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "414": {
+        "content": 2144.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "415": {
+        "content": 776.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "417": {
+        "content": 3892.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "419": {
+        "content": 3534.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "420": {
+        "content": 530.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "421": {
+        "content": 2784.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "423": {
+        "content": 1770.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "424": {
+        "content": 2836.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "427": {
+        "content": 4991.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "429": {
+        "content": 177.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "430": {
+        "content": 2881.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "431": {
+        "content": 1370.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "432": {
+        "content": 80.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "434": {
+        "content": 3484.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "435": {
+        "content": 4259.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "436": {
+        "content": 3221.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "437": {
+        "content": 2321.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "439": {
+        "content": 3319.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "440": {
+        "content": 93.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "441": {
+        "content": 505.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "442": {
+        "content": 4755.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "443": {
+        "content": 3409.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "444": {
+        "content": 1504.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n"
+        ]
+    },
+    "445": {
+        "content": 1096.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "446": {
+        "content": 3384.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "447": {
+        "content": 4622.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "450": {
+        "content": 4172.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "451": {
+        "content": 1769.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n"
+        ]
+    },
+    "452": {
+        "content": 1174.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "453": {
+        "content": 4753.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "454": {
+        "content": 3360.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "457": {
+        "content": 4477.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "458": {
+        "content": 4294.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "459": {
+        "content": 4125.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "460": {
+        "content": 1612.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n"
+        ]
+    },
+    "461": {
+        "content": 2787.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "462": {
+        "content": 1175.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "463": {
+        "content": 1503.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n"
+        ]
+    },
+    "464": {
+        "content": 2628.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "465": {
+        "content": 4122.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "466": {
+        "content": 2305.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "467": {
+        "content": 4677.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "469": {
+        "content": 219.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "470": {
+        "content": 3774.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "471": {
+        "content": 2101.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "473": {
+        "content": 1073.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "474": {
+        "content": 4762.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "475": {
+        "content": 2145.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "477": {
+        "content": 4043.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "478": {
+        "content": 210.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "479": {
+        "content": 354.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "480": {
+        "content": 2264.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "481": {
+        "content": 2395.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "482": {
+        "content": 3632.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "483": {
+        "content": 2269.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "484": {
+        "content": 2640.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "485": {
+        "content": 4215.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "486": {
+        "content": 367.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "489": {
+        "content": 3707.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "490": {
+        "content": 1513.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-blues-synset-0-n"
+        ]
+    },
+    "491": {
+        "content": 135.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "492": {
+        "content": 4056.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "493": {
+        "content": 1983.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "494": {
+        "content": 47.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "495": {
+        "content": 4415.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "496": {
+        "content": 4016.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "497": {
+        "content": 4052.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "498": {
+        "content": 927.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "500": {
+        "content": 2104.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "501": {
+        "content": 4147.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "502": {
+        "content": 4322.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "503": {
+        "content": 3078.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "504": {
+        "content": 61.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "505": {
+        "content": 3567.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "506": {
+        "content": 2627.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "508": {
+        "content": 2780.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "509": {
+        "content": 95.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "511": {
+        "content": 478.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "513": {
+        "content": 4505.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "514": {
+        "content": 810.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "515": {
+        "content": 2823.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "516": {
+        "content": 2939.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "517": {
+        "content": 4280.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "518": {
+        "content": 322.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "519": {
+        "content": 1101.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "520": {
+        "content": 4666.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "521": {
+        "content": 3024.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "522": {
+        "content": 2083.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "523": {
+        "content": 2117.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "524": {
+        "content": 4704.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "525": {
+        "content": 2299.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "526": {
+        "content": 291.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "527": {
+        "content": 683.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "528": {
+        "content": 3692.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "530": {
+        "content": 4715.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "531": {
+        "content": 3811.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "532": {
+        "content": 3013.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "533": {
+        "content": 4481.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "534": {
+        "content": 1610.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "535": {
+        "content": 4008.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "536": {
+        "content": 2819.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "537": {
+        "content": 807.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "538": {
+        "content": 2992.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "540": {
+        "content": 577.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "541": {
+        "content": 3167.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "542": {
+        "content": 964.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "543": {
+        "content": 2997.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "544": {
+        "content": 1721.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n"
+        ]
+    },
+    "545": {
+        "content": 1808.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "546": {
+        "content": 3852.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "547": {
+        "content": 4519.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "548": {
+        "content": 4913.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "549": {
+        "content": 4935.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "550": {
+        "content": 4179.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "551": {
+        "content": 676.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "552": {
+        "content": 2053.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "553": {
+        "content": 4062.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "556": {
+        "content": 2231.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "557": {
+        "content": 2100.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "558": {
+        "content": 2211.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "559": {
+        "content": 2098.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "560": {
+        "content": 2550.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "561": {
+        "content": 3568.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "562": {
+        "content": 1662.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "566": {
+        "content": 1434.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "567": {
+        "content": 4459.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "568": {
+        "content": 2895.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "569": {
+        "content": 4141.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "571": {
+        "content": 4359.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "572": {
+        "content": 798.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "573": {
+        "content": 3558.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "574": {
+        "content": 1779.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n"
+        ]
+    },
+    "575": {
+        "content": 1170.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "576": {
+        "content": 3370.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "579": {
+        "content": 3469.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "580": {
+        "content": 586.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "581": {
+        "content": 3740.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "583": {
+        "content": 2867.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "584": {
+        "content": 1419.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "585": {
+        "content": 1261.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "586": {
+        "content": 2796.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "588": {
+        "content": 711.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "589": {
+        "content": 1074.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "590": {
+        "content": 2989.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "591": {
+        "content": 994.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "592": {
+        "content": 1893.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-blues-synset-0-n"
+        ]
+    },
+    "593": {
+        "content": 911.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "594": {
+        "content": 1557.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "595": {
+        "content": 4933.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "596": {
+        "content": 2588.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "597": {
+        "content": 1751.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "598": {
+        "content": 3595.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "599": {
+        "content": 3666.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "600": {
+        "content": 1694.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "601": {
+        "content": 233.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "602": {
+        "content": 4560.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-blues-synset-0-n"
+        ]
+    },
+    "603": {
+        "content": 3784.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "605": {
+        "content": 2704.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "606": {
+        "content": 1822.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "607": {
+        "content": 2115.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "608": {
+        "content": 731.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "609": {
+        "content": 17.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "610": {
+        "content": 4855.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "611": {
+        "content": 977.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "612": {
+        "content": 596.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "613": {
+        "content": 2146.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "615": {
+        "content": 2765.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "616": {
+        "content": 1095.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "618": {
+        "content": 1330.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "620": {
+        "content": 238.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "621": {
+        "content": 4195.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "622": {
+        "content": 4089.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "624": {
+        "content": 1084.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "625": {
+        "content": 2533.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "626": {
+        "content": 3917.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "627": {
+        "content": 2536.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "628": {
+        "content": 3455.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "629": {
+        "content": 3094.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "630": {
+        "content": 2741.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "632": {
+        "content": 751.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "633": {
+        "content": 4205.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "634": {
+        "content": 1844.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n"
+        ]
+    },
+    "635": {
+        "content": 4246.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "637": {
+        "content": 1055.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "638": {
+        "content": 4182.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "639": {
+        "content": 2567.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "640": {
+        "content": 2984.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "641": {
+        "content": 2746.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "642": {
+        "content": 621.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "643": {
+        "content": 4073.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "644": {
+        "content": 3620.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "645": {
+        "content": 4775.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "647": {
+        "content": 3950.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "648": {
+        "content": 1448.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "649": {
+        "content": 51.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "650": {
+        "content": 721.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "652": {
+        "content": 3724.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "654": {
+        "content": 4680.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "655": {
+        "content": 2059.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "656": {
+        "content": 443.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "657": {
+        "content": 4247.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "658": {
+        "content": 195.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "659": {
+        "content": 4549.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "661": {
+        "content": 3856.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "662": {
+        "content": 828.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "663": {
+        "content": 4498.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "664": {
+        "content": 1872.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "666": {
+        "content": 2552.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "668": {
+        "content": 644.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "670": {
+        "content": 4444.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "672": {
+        "content": 4397.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "673": {
+        "content": 120.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "674": {
+        "content": 4986.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "676": {
+        "content": 4881.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "677": {
+        "content": 2580.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "678": {
+        "content": 1937.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "682": {
+        "content": 2277.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "684": {
+        "content": 1630.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "685": {
+        "content": 511.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "687": {
+        "content": 4044.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "688": {
+        "content": 3128.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "689": {
+        "content": 4357.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "690": {
+        "content": 3705.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "691": {
+        "content": 705.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "692": {
+        "content": 3593.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "695": {
+        "content": 3691.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "697": {
+        "content": 2948.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "699": {
+        "content": 1835.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "700": {
+        "content": 4646.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "701": {
+        "content": 3963.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "702": {
+        "content": 2715.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "703": {
+        "content": 567.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "706": {
+        "content": 3541.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "707": {
+        "content": 1128.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "710": {
+        "content": 4795.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "711": {
+        "content": 1025.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "712": {
+        "content": 4557.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "713": {
+        "content": 2702.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "714": {
+        "content": 2591.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "715": {
+        "content": 1807.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "717": {
+        "content": 2226.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "718": {
+        "content": 4716.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "719": {
+        "content": 1057.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "720": {
+        "content": 4265.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "721": {
+        "content": 318.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "722": {
+        "content": 812.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "723": {
+        "content": 2025.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "724": {
+        "content": 274.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "725": {
+        "content": 4133.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "726": {
+        "content": 549.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "727": {
+        "content": 1726.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n"
+        ]
+    },
+    "728": {
+        "content": 3759.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "729": {
+        "content": 4885.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "730": {
+        "content": 2925.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "731": {
+        "content": 605.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "732": {
+        "content": 4918.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "734": {
+        "content": 3453.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "735": {
+        "content": 3114.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "736": {
+        "content": 2405.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "737": {
+        "content": 4177.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "738": {
+        "content": 4819.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "739": {
+        "content": 2319.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "741": {
+        "content": 4192.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "742": {
+        "content": 2528.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "743": {
+        "content": 3312.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "744": {
+        "content": 3831.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "745": {
+        "content": 3716.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "746": {
+        "content": 1038.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "747": {
+        "content": 4624.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "748": {
+        "content": 1323.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "749": {
+        "content": 3566.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "751": {
+        "content": 2465.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "752": {
+        "content": 3188.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "753": {
+        "content": 1212.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "754": {
+        "content": 2845.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "755": {
+        "content": 2095.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "757": {
+        "content": 376.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "758": {
+        "content": 3351.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "760": {
+        "content": 1912.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "761": {
+        "content": 378.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "762": {
+        "content": 4656.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "763": {
+        "content": 2021.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "764": {
+        "content": 1094.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "765": {
+        "content": 3698.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "766": {
+        "content": 1485.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "767": {
+        "content": 1871.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "769": {
+        "content": 1272.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "770": {
+        "content": 4951.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "771": {
+        "content": 2990.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "772": {
+        "content": 2266.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "773": {
+        "content": 1788.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "774": {
+        "content": 2498.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "775": {
+        "content": 1615.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "776": {
+        "content": 842.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "777": {
+        "content": 175.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "778": {
+        "content": 1870.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "779": {
+        "content": 4269.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "780": {
+        "content": 45.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "781": {
+        "content": 4614.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "782": {
+        "content": 1406.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "783": {
+        "content": 4184.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "784": {
+        "content": 2820.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "785": {
+        "content": 4708.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "786": {
+        "content": 2505.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "787": {
+        "content": 4513.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "788": {
+        "content": 3985.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "790": {
+        "content": 3089.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-blues-synset-0-n"
+        ]
+    },
+    "792": {
+        "content": 283.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "793": {
+        "content": 3238.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "796": {
+        "content": 1158.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "797": {
+        "content": 3034.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "798": {
+        "content": 4722.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "800": {
+        "content": 4968.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "801": {
+        "content": 3240.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "802": {
+        "content": 2685.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "803": {
+        "content": 2274.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "804": {
+        "content": 2052.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "805": {
+        "content": 1001.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "806": {
+        "content": 896.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "807": {
+        "content": 4553.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "809": {
+        "content": 4790.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "810": {
+        "content": 1497.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "811": {
+        "content": 996.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "812": {
+        "content": 3388.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "813": {
+        "content": 4713.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "815": {
+        "content": 3862.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "816": {
+        "content": 351.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "818": {
+        "content": 1018.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "821": {
+        "content": 718.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "822": {
+        "content": 2694.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "823": {
+        "content": 1505.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "824": {
+        "content": 308.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "826": {
+        "content": 366.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "827": {
+        "content": 3710.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "828": {
+        "content": 2072.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "829": {
+        "content": 3339.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "830": {
+        "content": 3753.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "831": {
+        "content": 3040.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "832": {
+        "content": 2817.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "833": {
+        "content": 19.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "836": {
+        "content": 2437.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "837": {
+        "content": 218.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "838": {
+        "content": 4316.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "839": {
+        "content": 438.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "840": {
+        "content": 1420.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "841": {
+        "content": 1907.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "842": {
+        "content": 3279.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "843": {
+        "content": 3424.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "844": {
+        "content": 3307.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "846": {
+        "content": 1270.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "847": {
+        "content": 2755.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "850": {
+        "content": 2222.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "851": {
+        "content": 4365.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "852": {
+        "content": 4490.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "856": {
+        "content": 3407.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "857": {
+        "content": 2267.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "858": {
+        "content": 2174.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "861": {
+        "content": 1020.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "862": {
+        "content": 907.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "863": {
+        "content": 3035.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "864": {
+        "content": 1417.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "865": {
+        "content": 4113.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "866": {
+        "content": 517.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "867": {
+        "content": 3050.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "868": {
+        "content": 1321.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "871": {
+        "content": 1784.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "872": {
+        "content": 1397.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "873": {
+        "content": 4904.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "875": {
+        "content": 1231.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "876": {
+        "content": 3528.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "877": {
+        "content": 2413.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "878": {
+        "content": 2118.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "879": {
+        "content": 3333.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "880": {
+        "content": 3787.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "881": {
+        "content": 3485.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "882": {
+        "content": 759.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "883": {
+        "content": 4536.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "884": {
+        "content": 3934.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "885": {
+        "content": 2244.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "886": {
+        "content": 1115.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "887": {
+        "content": 889.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "888": {
+        "content": 4420.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "889": {
+        "content": 214.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "890": {
+        "content": 3322.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "891": {
+        "content": 1566.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-blues-synset-0-n"
+        ]
+    },
+    "892": {
+        "content": 693.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "893": {
+        "content": 1945.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "894": {
+        "content": 2834.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "896": {
+        "content": 3599.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "899": {
+        "content": 1183.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "900": {
+        "content": 4256.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "901": {
+        "content": 196.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "902": {
+        "content": 1041.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "903": {
+        "content": 1532.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n"
+        ]
+    },
+    "904": {
+        "content": 1032.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "905": {
+        "content": 4886.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "906": {
+        "content": 1600.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n"
+        ]
+    },
+    "907": {
+        "content": 1897.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "908": {
+        "content": 3846.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "909": {
+        "content": 4221.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "911": {
+        "content": 1335.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "912": {
+        "content": 68.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "913": {
+        "content": 4597.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "914": {
+        "content": 568.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "916": {
+        "content": 96.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "917": {
+        "content": 1292.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "918": {
+        "content": 1705.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n"
+        ]
+    },
+    "919": {
+        "content": 139.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "920": {
+        "content": 2229.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "921": {
+        "content": 2594.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "925": {
+        "content": 4310.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "926": {
+        "content": 1777.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "927": {
+        "content": 4717.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "928": {
+        "content": 4727.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "929": {
+        "content": 463.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "930": {
+        "content": 2323.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "931": {
+        "content": 1741.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "932": {
+        "content": 1962.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "933": {
+        "content": 594.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "934": {
+        "content": 1536.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "935": {
+        "content": 625.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "936": {
+        "content": 450.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "938": {
+        "content": 4871.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "939": {
+        "content": 2002.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "940": {
+        "content": 1558.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n"
+        ]
+    },
+    "942": {
+        "content": 3014.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-pop-synset-0-n"
+        ]
+    },
+    "943": {
+        "content": 3682.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n"
+        ]
+    },
+    "944": {
+        "content": 3615.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "946": {
+        "content": 150.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "947": {
+        "content": 3906.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "948": {
+        "content": 4450.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "949": {
+        "content": 2678.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "951": {
+        "content": 3252.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "952": {
+        "content": 457.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "953": {
+        "content": 1295.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "955": {
+        "content": 4657.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "956": {
+        "content": 3480.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "957": {
+        "content": 2456.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "958": {
+        "content": 1634.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "959": {
+        "content": 4438.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-disco-synset-0-n"
+        ]
+    },
+    "961": {
+        "content": 239.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "963": {
+        "content": 4485.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "964": {
+        "content": 4112.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-blues-synset-0-n",
+            "gtzan-en-classical-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "966": {
+        "content": 1253.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "967": {
+        "content": 192.0,
+        "label": "pop",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "969": {
+        "content": 3833.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "970": {
+        "content": 944.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "971": {
+        "content": 3380.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "972": {
+        "content": 4225.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "973": {
+        "content": 1215.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "975": {
+        "content": 1129.0,
+        "label": "disco",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "977": {
+        "content": 4127.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-pop-synset-0-n",
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "979": {
+        "content": 3555.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "980": {
+        "content": 4084.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "981": {
+        "content": 2252.0,
+        "label": "reggae",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-reggae-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "982": {
+        "content": 800.0,
+        "label": "metal",
+        "set": [
+            "gtzan-en-metal-synset-0-n"
+        ]
+    },
+    "983": {
+        "content": 3459.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    },
+    "987": {
+        "content": 3804.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "988": {
+        "content": 2653.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "989": {
+        "content": 4049.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-disco-synset-0-n",
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "991": {
+        "content": 4686.0,
+        "label": "jazz",
+        "set": [
+            "gtzan-en-rock-synset-0-n",
+            "gtzan-en-country-synset-0-n",
+            "gtzan-en-jazz-synset-0-n"
+        ]
+    },
+    "992": {
+        "content": 3938.0,
+        "label": "hiphop",
+        "set": [
+            "gtzan-en-hiphop-synset-0-n"
+        ]
+    },
+    "993": {
+        "content": 2662.0,
+        "label": "classical",
+        "set": [
+            "gtzan-en-classical-synset-0-n"
+        ]
+    },
+    "994": {
+        "content": 1588.0,
+        "label": "blues",
+        "set": [
+            "gtzan-en-blues-synset-0-n"
+        ]
+    },
+    "997": {
+        "content": 4017.0,
+        "label": "country",
+        "set": [
+            "gtzan-en-country-synset-0-n"
+        ]
+    },
+    "998": {
+        "content": 3398.0,
+        "label": "rock",
+        "set": [
+            "gtzan-en-metal-synset-0-n",
+            "gtzan-en-rock-synset-0-n"
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+To reproduce the comparison results,
+
+1.	Go to the link (https://github.com/botong516/Conformal-Structured-Prediction/tree/main), clone the repository and follow the instructions.
+2.	Download the collected data here(https://drive.google.com/drive/u/0/folders/1QMnCi1Due6CueTvfQgtnVHIBwCQF5rTF) and place it to the root directory.
+3.	From HCC code repository, copy comparison_withExisting/imagenet_modified.py file and put it to the “run” directory. 
+4.	To run the comparison, navigate to /run directory and execute the imagenet_modified.py for both the model (first existing model):
+        i.	python imagenet_modified.py --run_existing_model 
+        ii.	Python imagenet_modified.py  
+5.	Results will be stored in comparison_outputs in the root directory.
+

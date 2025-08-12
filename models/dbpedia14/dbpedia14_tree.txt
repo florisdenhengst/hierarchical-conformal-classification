@@ -1,0 +1,25 @@
+Entity
+├── :Agent
+│   └── :Organisation
+│       ├── :Company
+│       └── :EducationalInstitution
+├── :ArchitecturalStructure
+│   └── :Building
+├── :MeansOfTransport
+├── :Place
+│   └── :NaturalPlace
+├── :Settlement
+│   └── :Village
+├── :Species
+│   └── :Eukaryote
+│       ├── :AnimalPerson
+|       |   ├── :Animal
+│       │   └── :Person
+│       │       ├── :Artist
+│       │       ├── :Athlete
+│       │       └── :OfficeHolder
+│       └── :Plant
+└── :Work
+    ├── :Album
+    ├── :Film
+    └── :WrittenWork

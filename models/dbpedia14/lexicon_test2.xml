@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE LexicalResource SYSTEM "http://globalwordnet.github.io/schemas/WN-LMF-1.1.dtd">
+<LexicalResource xmlns:dc="https://globalwordnet.github.io/schemas/dc/">
+  <Lexicon id="omw-arb"
+           label="Arabic WordNet (AWN v2)"
+           language="arb"
+           email="bond@ieee.org"
+           license="https://creativecommons.org/licenses/by-sa/3.0/"
+           version="1.4"
+           url="http://globalwordnet.org/resources/arabic-wordnet/"
+           citation="Black W., Elkateb S., Rodriguez H., Alkhalifa M., Vossen P., Pease A., Bertran M., Fellbaum C.,. 2006. *The Arabic WordNet Project*. In *Proceedings of LREC 2006*.&#10;Lahsen Abouenour, Karim Bouzoubaa, Paolo Rosso. 2013. *On the evaluation and improvement of {Arabic} WordNet coverage and usability*. *Language Resources and Evaluation*, **47(3)** pp 891–917.">
+    <Requires id="omw-en" version="1.4" />
+    <LexicalEntry id="omw-arb-أوّلِي-a">
+      <Lemma writtenForm="أوّلِي" partOfSpeech="a" />
+      <Sense id="omw-arb-أوّلِي-03012209-a" synset="omw-arb-03012209-a" />
+    </LexicalEntry>
+  </Lexicon>
+</LexicalResource>

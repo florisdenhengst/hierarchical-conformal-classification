@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE LexicalResource SYSTEM "http://globalwordnet.github.io/schemas/WN-LMF-1.1.dtd">
+<LexicalResource xmlns:dc="https://globalwordnet.github.io/schemas/dc/">
+    <Lexicon
+        id="dbpedia14-en"
+        label="Wordnet for the DBpedia14 dataset"
+        language="en"
+        email="f.den.hengst@vu.nl"
+        license="https://creativecommons.org/licenses/by/4.0/"
+        version="1.0"
+    >
+    <LexicalEntry id="dbpedia14-en-entity-n">
+        <Lemma writtenForm="entity" partOfSpeech="n" />
+        <Sense id="dbpedia14-en-entity-sense-0-n" synset="dbpedia14-en-entity-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="dbpedia14-en-agent-n">
+        <Lemma writtenForm="agent" partOfSpeech="n" />
+        <Sense id="dbpedia14-en-agent-sense-0-n" synset="dbpedia14-en-agent-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="dbpedia14-en-organisation-n">
+        <Lemma writtenForm="organisation" partOfSpeech="n" />
+        <Sense id="dbpedia14-en-organisation-sense-0-n" synset="dbpedia14-en-organisation-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="dbpedia14-en-company-n">
+        <Lemma writtenForm="company" partOfSpeech="n" />
+        <Sense id="dbpedia14-en-company-sense-0-n" synset="dbpedia14-en-company-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="dbpedia14-en-educationalinstitution-n">
+        <Lemma writtenForm="educationalinstitution" partOfSpeech="n" />
+        <Sense id="dbpedia14-en-educationalinstitution-sense-0-n" synset="dbpedia14-en-educationalinstitution-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="dbpedia14-en-architecturalstructure-n">
+        <Lemma writtenForm="architecturalstructure" partOfSpeech="n" />
+        <Sense id="dbpedia14-en-architecturalstructure-sense-0-n" synset="dbpedia14-en-architecturalstructure-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="dbpedia14-en-building-n">
+        <Lemma writtenForm="building" partOfSpeech="n" />
+        <Sense id="dbpedia14-en-building-sense-0-n" synset="dbpedia14-en-building-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="dbpedia14-en-meanoftransportation-n">
+        <Lemma writtenForm="meanoftransportation" partOfSpeech="n" />
+        <Sense id="dbpedia14-en-meanoftransportation-sense-0-n" synset="dbpedia14-en-meanoftransportation-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="dbpedia14-en-place-n">
+        <Lemma writtenForm="place" partOfSpeech="n" />
+        <Sense id="dbpedia14-en-place-sense-0-n" synset="dbpedia14-en-place-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="dbpedia14-en-naturalplace-n">
+        <Lemma writtenForm="naturalplace" partOfSpeech="n" />
+        <Sense id="dbpedia14-en-naturalplace-sense-0-n" synset="dbpedia14-en-naturalplace-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="dbpedia14-en-settlement-n">
+        <Lemma writtenForm="settlement" partOfSpeech="n" />
+        <Sense id="dbpedia14-en-settlement-sense-0-n" synset="dbpedia14-en-settlement-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="dbpedia14-en-village-n">
+        <Lemma writtenForm="village" partOfSpeech="n" />
+        <Sense id="dbpedia14-en-village-sense-0-n" synset="dbpedia14-en-village-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="dbpedia14-en-species-n">
+        <Lemma writtenForm="species" partOfSpeech="n" />
+        <Sense id="dbpedia14-en-species-sense-0-n" synset="dbpedia14-en-species-synset-0-n" />
+    </LexicalEntry>
+   <LexicalEntry id="dbpedia14-en-eukaryote-n">
+        <Lemma writtenForm="eukaryote" partOfSpeech="n" />
+        <Sense id="dbpedia14-en-eukaryote-sense-0-n" synset="dbpedia14-en-eukaryote-synset-0-n" />
+    </LexicalEntry>
+    
+
+    <LexicalEntry id="dbpedia14-en-animalperson-n">
+        <Lemma writtenForm="animalperson" partOfSpeech="n" />
+        <Sense id="dbpedia14-en-animalperson-sense-0-n" synset="dbpedia14-en-animalperson-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="dbpedia14-en-animal-n">
+        <Lemma writtenForm="animal" partOfSpeech="n" />
+        <Sense id="dbpedia14-en-animal-sense-0-n" synset="dbpedia14-en-animal-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="dbpedia14-en-person-n">
+        <Lemma writtenForm="person" partOfSpeech="n" />
+        <Sense id="dbpedia14-en-person-sense-0-n" synset="dbpedia14-en-person-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="dbpedia14-en-artist-n">
+        <Lemma writtenForm="artist" partOfSpeech="n" />
+        <Sense id="dbpedia14-en-artist-sense-0-n" synset="dbpedia14-en-artist-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="dbpedia14-en-athlete-n">
+        <Lemma writtenForm="athlete" partOfSpeech="n" />
+        <Sense id="dbpedia14-en-athlete-sense-0-n" synset="dbpedia14-en-athlete-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="dbpedia14-en-officeholder-n">
+        <Lemma writtenForm="officeholder" partOfSpeech="n" />
+        <Sense id="dbpedia14-en-officeholder-sense-0-n" synset="dbpedia14-en-officeholder-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="dbpedia14-en-plant-n">
+        <Lemma writtenForm="plant" partOfSpeech="n" />
+        <Sense id="dbpedia14-en-plant-sense-0-n" synset="dbpedia14-en-plant-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="dbpedia14-en-work-n">
+        <Lemma writtenForm="work" partOfSpeech="n" />
+        <Sense id="dbpedia14-en-work-sense-0-n" synset="dbpedia14-en-work-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="dbpedia14-en-album-n">
+        <Lemma writtenForm="album" partOfSpeech="n" />
+        <Sense id="dbpedia14-en-album-sense-0-n" synset="dbpedia14-en-album-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="dbpedia14-en-film-n">
+        <Lemma writtenForm="film" partOfSpeech="n" />
+        <Sense id="dbpedia14-en-film-sense-0-n" synset="dbpedia14-en-film-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="dbpedia14-en-writtenwork-n">
+        <Lemma writtenForm="writtenwork" partOfSpeech="n" />
+        <Sense id="dbpedia14-en-writtenwork-sense-0-n" synset="dbpedia14-en-writtenwork-synset-0-n" />
+    </LexicalEntry>
+
+
+
+   <Synset id="dbpedia14-en-entity-synset-0-n" ili="in" partOfSpeech="n" members="dbpedia14-en-entity-sense-0-n">
+        <SynsetRelation relType="hyponym" target="dbpedia14-en-agent-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="dbpedia14-en-architecturalstructure-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="dbpedia14-en-meanoftransportation-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="dbpedia14-en-place-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="dbpedia14-en-settlement-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="dbpedia14-en-species-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="dbpedia14-en-work-synset-0-n" />
+    </Synset>
+    <Synset id="dbpedia14-en-agent-synset-0-n" ili="in" partOfSpeech="n" members="dbpedia14-en-agent-sense-0-n">
+        <SynsetRelation relType="hypernym" target="dbpedia14-en-entity-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="dbpedia14-en-organisation-synset-0-n" />
+    </Synset>
+    <Synset id="dbpedia14-en-organisation-synset-0-n" ili="in" partOfSpeech="n" members="dbpedia14-en-organisation-sense-0-n">
+        <SynsetRelation relType="hypernym" target="dbpedia14-en-agent-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="dbpedia14-en-company-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="dbpedia14-en-educationalinstitution-synset-0-n" />
+    </Synset>
+    <Synset id="dbpedia14-en-company-synset-0-n" ili="in" partOfSpeech="n" members="dbpedia14-en-company-sense-0-n">
+        <SynsetRelation relType="hypernym" target="dbpedia14-en-organisation-synset-0-n" />
+    </Synset>
+    <Synset id="dbpedia14-en-educationalinstitution-synset-0-n" ili="in" partOfSpeech="n" members="dbpedia14-en-educationalinstitution-sense-0-n">
+        <SynsetRelation relType="hypernym" target="dbpedia14-en-organisation-synset-0-n" />
+    </Synset>
+    <Synset id="dbpedia14-en-architecturalstructure-synset-0-n" ili="in" partOfSpeech="n" members="dbpedia14-en-architecturalstructure-sense-0-n">
+        <SynsetRelation relType="hypernym" target="dbpedia14-en-entity-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="dbpedia14-en-building-synset-0-n" />
+    </Synset>
+    <Synset id="dbpedia14-en-building-synset-0-n" ili="in" partOfSpeech="n" members="dbpedia14-en-building-sense-0-n">
+        <SynsetRelation relType="hypernym" target="dbpedia14-en-architecturalstructure-synset-0-n" />
+    </Synset>
+    <Synset id="dbpedia14-en-meanoftransportation-synset-0-n" ili="in" partOfSpeech="n" members="dbpedia14-en-meanoftransportation-sense-0-n">
+        <SynsetRelation relType="hypernym" target="dbpedia14-en-entity-synset-0-n" />
+    </Synset>
+    <Synset id="dbpedia14-en-place-synset-0-n" ili="in" partOfSpeech="n" members="dbpedia14-en-place-sense-0-n">
+        <SynsetRelation relType="hypernym" target="dbpedia14-en-entity-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="dbpedia14-en-naturalplace-synset-0-n" />
+    </Synset>
+    <Synset id="dbpedia14-en-naturalplace-synset-0-n" ili="in" partOfSpeech="n" members="dbpedia14-en-place-naturalplace-0-n">
+        <SynsetRelation relType="hypernym" target="dbpedia14-en-place-synset-0-n" />
+    </Synset>
+    <Synset id="dbpedia14-en-settlement-synset-0-n" ili="in" partOfSpeech="n" members="dbpedia14-en-settlement-sense-0-n">
+        <SynsetRelation relType="hypernym" target="dbpedia14-en-entity-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="dbpedia14-en-village-synset-0-n" />
+    </Synset>
+    <Synset id="dbpedia14-en-village-synset-0-n" ili="in" partOfSpeech="n" members="dbpedia14-en-village-sense-0-n">
+        <SynsetRelation relType="hypernym" target="dbpedia14-en-settlement-synset-0-n" />
+    </Synset>
+    <Synset id="dbpedia14-en-species-synset-0-n" ili="in" partOfSpeech="n" members="dbpedia14-en-species-sense-0-n">
+        <SynsetRelation relType="hypernym" target="dbpedia14-en-entity-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="dbpedia14-en-eukaryote-synset-0-n" />
+    </Synset>
+    <Synset id="dbpedia14-en-eukaryote-synset-0-n" ili="in" partOfSpeech="n" members="dbpedia14-en-eukaryote-sense-0-n">
+        <SynsetRelation relType="hypernym" target="dbpedia14-en-species-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="dbpedia14-en-animalperson-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="dbpedia14-en-plant-synset-0-n" />
+    </Synset>
+    <Synset id="dbpedia14-en-animalperson-synset-0-n" ili="in" partOfSpeech="n" members="dbpedia14-en-animalperson-sense-0-n">
+        <SynsetRelation relType="hypernym" target="dbpedia14-en-eukaryote-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="dbpedia14-en-person-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="dbpedia14-en-animal-synset-0-n" />
+    </Synset>
+    <Synset id="dbpedia14-en-animal-synset-0-n" ili="in" partOfSpeech="n" members="dbpedia14-en-animal-sense-0-n">
+        <SynsetRelation relType="hypernym" target="dbpedia14-en-animalperson-synset-0-n" />
+    </Synset>
+    <Synset id="dbpedia14-en-person-synset-0-n" ili="in" partOfSpeech="n" members="dbpedia14-en-person-sense-0-n">
+        <SynsetRelation relType="hypernym" target="dbpedia14-en-animalperson-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="dbpedia14-en-artist-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="dbpedia14-en-athlete-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="dbpedia14-en-officeholder-synset-0-n" />
+    </Synset>
+    <Synset id="dbpedia14-en-artist-synset-0-n" ili="in" partOfSpeech="n" members="dbpedia14-en-artist-sense-0-n">
+        <SynsetRelation relType="hypernym" target="dbpedia14-en-person-synset-0-n" />
+    </Synset>
+    <Synset id="dbpedia14-en-athlete-synset-0-n" ili="in" partOfSpeech="n" members="dbpedia14-en-athlete-sense-0-n">
+        <SynsetRelation relType="hypernym" target="dbpedia14-en-person-synset-0-n" />
+    </Synset>
+    <Synset id="dbpedia14-en-officeholder-synset-0-n" ili="in" partOfSpeech="n" members="dbpedia14-en-officeholder-sense-0-n">
+        <SynsetRelation relType="hypernym" target="dbpedia14-en-person-synset-0-n" />
+    </Synset>
+    <Synset id="dbpedia14-en-plant-synset-0-n" ili="in" partOfSpeech="n" members="dbpedia14-en-plant-sense-0-n">
+        <SynsetRelation relType="hypernym" target="dbpedia14-en-eukaryote-synset-0-n" />
+    </Synset>
+    <Synset id="dbpedia14-en-work-synset-0-n" ili="in" partOfSpeech="n" members="dbpedia14-en-work-sense-0-n">
+        <SynsetRelation relType="hypernym" target="dbpedia14-en-entity-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="dbpedia14-en-album-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="dbpedia14-en-film-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="dbpedia14-en-writtenwork-synset-0-n" />
+    </Synset>
+    
+
+    <Synset id="dbpedia14-en-album-synset-0-n" ili="in" partOfSpeech="n" members="dbpedia14-en-album-sense-0-n">
+        <SynsetRelation relType="hypernym" target="dbpedia14-en-work-synset-0-n" />
+    </Synset>
+    
+
+    <Synset id="dbpedia14-en-film-synset-0-n" ili="in" partOfSpeech="n" members="dbpedia14-en-film-sense-0-n">
+        <SynsetRelation relType="hypernym" target="dbpedia14-en-work-synset-0-n" />
+    </Synset>
+    
+
+    <Synset id="dbpedia14-en-writtenwork-synset-0-n" ili="in" partOfSpeech="n" members="dbpedia14-en-writtenwork-sense-0-n">
+        <SynsetRelation relType="hypernym" target="dbpedia14-en-work-synset-0-n" />
+    </Synset>
+    </Lexicon>
+</LexicalResource>

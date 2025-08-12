@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE LexicalResource SYSTEM "http://globalwordnet.github.io/schemas/WN-LMF-1.3.dtd">
+<LexicalResource xmlns:dc="https://globalwordnet.github.io/schemas/dc/">
+    <Lexicon id="example-en"
+             label="Example wordnet (English)"
+             language="en" 
+             email="john@mccr.ae"
+             license="https://creativecommons.org/publicdomain/zero/1.0/"
+             version="1.0"
+             citation="CILI: the Collaborative Interlingual Index. Francis Bond, Piek Vossen, John P. McCrae and Christiane Fellbaum, Proceedings of the Global WordNet Conference 2016, (2016)."
+             url="http://globalwordnet.github.io/schemas/"
+             dc:publisher="Global Wordnet Association">
+        <!-- The list of lexical entries (words) in your wordnet -->
+        <LexicalEntry id="w1">
+            <!-- The part of speech values are as follows:
+                 n: Noun
+                 v: Verb
+                 a: Adjective
+                 r: Adverb
+                 s: Adjective Satellite
+                 z: Multiword expression (inc. phrase, idiom)
+                 c: Conjunction
+                 p: Adposition (Preposition, postposition, etc.)
+                 x: Other (inc. particle, classifier, bound morpheme, determiner)
+                 u: Unknown -->
+            <Lemma writtenForm="grandfather" partOfSpeech="n"/>
+            <Sense id="example-en-10161911-n-1" synset="example-en-10161911-n">
+            </Sense>
+        </LexicalEntry>
+        <LexicalEntry id="w2">
+            <Lemma writtenForm="paternal grandfather" partOfSpeech="n"/>
+            <Sense id="example-en-1-n-1" synset="example-en-1-n">
+                <!-- The set of relations between senses is limited to the following
+                     antonym: An opposite and inherently incompatible word
+                     also: See also, a reference of weak meaning
+                     participle: An adjective that is a participle form a verb
+                     pertainym: A relational adjective. Adjectives that are pertainyms are usually defined by such phrases as "of or pertaining to" and do not have antonyms. A pertainym can point to a noun or another pertainym
+                     derivation: A word that is derived from some other word
+                     domain_category: Indicates the category of this word
+                     domain_member_category: Indicates a word involved in this category described by this word
+                     domain_region: Indicates the region of this word
+                     domain_member_region: Indicates a word involved in the region described by this word
+                     exemplifies: Indicates the usage of this word
+                     is_exemplified_by: Indicates a word involved in the usage described by this word
+                -->
+                <SenseRelation relType="derivation" target="example-en-10161911-n-1"/>
+            </Sense>
+        </LexicalEntry>
+        <LexicalEntry id="w3">
+            <Lemma writtenForm="pay" partOfSpeech="v"/>
+            <!-- Syntactic Behaviour is given as in Princeton WordNet -->
+
+            <SyntacticBehaviour subcategorizationFrame="Somebody ----s" id="intransitive"/>
+            <SyntacticBehaviour subcategorizationFrame="Somebody ----s somebody" id="transitive"/>
+        </LexicalEntry>
+        <!-- If a synset is already mapped to the ILI please give the ID here -->
+        <Synset id="example-en-10161911-n" ili="i90287" partOfSpeech="n"
+                members="example-en-10161911-n-1 example-en-1-n-1">
+            <Definition>the father of your father or mother</Definition>
+            <!-- The set of relations between synsets is limited to the following:
+                    hypernym: A concept with a broader meaning
+                    hyponym: A concept with a narrower meaning
+                    instance_hypernym: The class of objects to which this instance belongs
+                    instance_hyponym: An individual instance of this class
+                    part_holonym: A larger whole that this concept is part of
+                    part_meronym: A part of this concept
+                    member_holonym: A group that this concept is a member of
+                    member_meronym: A member of this concept
+                    substance_holonym: Something where a constituent material is this concept
+                    substance_meronym: A constituent material of this concept
+                    entail: A verb X entails Y if X cannot be done unless Y is, or has been, done.
+                    cause: A verb that causes another
+                    similar: Similar, though not necessarily interchangeable
+                    also: See also, a reference of weak meaning
+                    attribute: A noun for which adjectives express values. The noun weight is an attribute, for which the adjectives light and heavy express values.
+                    domain_category: Indicates the category of this word
+                    domain_member_category: Indicates a word involved in this category described by this word
+                    domain_region: Indicates the region of this word
+                    domain_member_region: Indicates a word involved in the region described by this word
+                    exemplifies: Indicates the usage of this word
+                    is_exemplified_by: Indicates a word involved in the usage described by this word
+                -->
+            <SynsetRelation relType="hypernym" target="example-en-10162692-n"/>
+        </Synset>
+        <!-- If you wish to define a new concept call the concept "in" (ILI New) -->
+        <Synset id="example-en-1-n" ili="in" partOfSpeech="n">
+            <Definition>A father&apos;s father; a paternal grandfather</Definition>
+            <!-- You can include metadata (such as source) at many points -->
+            <!-- The ILI Definition must be at least 20 characters or five words -->
+            <ILIDefinition dc:source="https://en.wiktionary.org/wiki/farfar">A father&apos;s father; a paternal grandfather</ILIDefinition>
+        </Synset>
+        <!-- You must include all targets of relations -->
+        <Synset id="example-en-10162692-n" ili="i90292" partOfSpeech="n">
+        </Synset>
+    </Lexicon>
+    <Lexicon id="example_sv"
+             label="Example wordnet (Swedish)"
+             language="sv" 
+             email="john@mccr.ae"
+             license="https://creativecommons.org/publicdomain/zero/1.0/"
+             version="1.0"
+             citation="CILI: the Collaborative Interlingual Index. Francis Bond, Piek Vossen, John P. McCrae and Christiane Fellbaum, Proceedings of the Global WordNet Conference 2016, (2016)."
+             url="http://globalwordnet.github.io/schemas/"
+             dc:publisher="Global Wordnet Association">
+        <!-- The list of lexical entries (words) in your wordnet -->
+        <LexicalEntry id="w4">
+            <Lemma writtenForm="farfar" partOfSpeech="n"/>
+            <Form  writtenForm="farfäder">
+                <Tag category="penn">NNS</Tag>
+            </Form>
+            <!-- Synsets need not be language-specific but senses must be -->
+            <Sense id="example-sv-2-n-1" synset="example-en-1-n">
+                <Example dc:source="Europarl Corpus">Jag vill berätta för er att min farfar var svensk beredskapssoldat vid norska gränsen under andra världskriget, ett krig som Sverige stod utanför</Example>
+            </Sense>
+        </LexicalEntry>
+    </Lexicon>
+    <!-- LexiconExtensions build on top of some external wordnet. The
+         external lexicon must not be in the same document as the
+         extension, for technical reasons, and therefore any referenced
+         LexicalEntry, Sense, or Synset ids must be present as special
+         "external" entities. This example adds a new sense of "process"
+         (for a computer process) and a synset. In order to link it to
+         the external lexicon, the LexicalEntry for "process" and the
+         hypernym of the introduced synset are external entities. -->
+    <LexiconExtension id="ewn-cs-example"
+                      label="English WordNet Computer Science Terms (example)"
+                      language="en"
+                      email="goodmami@uw.edu"
+                      license="https://creativecommons.org/publicdomain/zero/1.0/"
+                      version="1.0">
+        <Extends id="ewn" version="2020" />
+        <!-- The ExternalLexicalEntry id should exist in ewn-2020 -->
+        <ExternalLexicalEntry id="ewn-process-n">
+            <!-- Add a new sense to the external entry -->
+            <Sense id="ewn-process-n-20000123" synset="ewn-20000123-n" />
+        </ExternalLexicalEntry>
+        <!-- External for "computer program" synset; it is only
+             introduced so its id can be referenced in the
+             SynsetRelation below -->
+        <ExternalSynset id="ewn-06581154-n" />
+        <!-- Add a new synset -->
+        <Synset id="ewn-20000123-n" ili="" partOfSpeech="n">
+            <Definition>a running instance of a computer program</Definition>
+            <SynsetRelation relType="hypernym" target="ewn-06581154-n" />
+        </Synset>
+    </LexiconExtension>
+</LexicalResource>

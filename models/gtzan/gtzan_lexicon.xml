@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE LexicalResource SYSTEM "http://globalwordnet.github.io/schemas/WN-LMF-1.1.dtd">
+<LexicalResource xmlns:dc="https://globalwordnet.github.io/schemas/dc/">
+    <Lexicon
+        id="gtzan-en"
+        label="Wordnet for the gtzan dataset"
+        language="en"
+        email="f.den.hengst@vu.nl"
+        license="https://creativecommons.org/licenses/by/4.0/"
+        version="1.0"
+    >
+
+    <LexicalEntry id="gtzan-en-entity-n">
+        <Lemma writtenForm="entity" partOfSpeech="n" />
+        <Sense id="gtzan-en-entity-sense-0-n" synset="gtzan-en-entity-synset-0-n" />
+    </LexicalEntry>
+
+    <LexicalEntry id="gtzan-en-electronic_rock-n">
+        <Lemma writtenForm="electronic_rock" partOfSpeech="n" />
+        <Sense id="gtzan-en-electronic_rock-sense-0-n" synset="gtzan-en-electronic_rock-synset-0-n" />
+    </LexicalEntry>
+
+    <LexicalEntry id="gtzan-en-jazz_blues_reggae-n">
+        <Lemma writtenForm="jazz_blues_reggae" partOfSpeech="n" />
+        <Sense id="gtzan-en-jazz_blues_reggae-sense-0-n" synset="gtzan-en-jazz_blues_reggae-synset-0-n" />
+    </LexicalEntry>
+
+    <LexicalEntry id="gtzan-en-pop_hiphop-n">
+        <Lemma writtenForm="pop_hiphop" partOfSpeech="n" />
+        <Sense id="gtzan-en-pop_hiphop-sense-0-n" synset="gtzan-en-pop_hiphop-synset-0-n" />
+    </LexicalEntry>
+
+    <LexicalEntry id="gtzan-en-classical_country-n">
+        <Lemma writtenForm="classical_country" partOfSpeech="n" />
+        <Sense id="gtzan-en-classical_country-sense-0-n" synset="gtzan-en-classical_country-synset-0-n" />
+    </LexicalEntry>
+
+    <LexicalEntry id="gtzan-en-disco-n">
+        <Lemma writtenForm="disco" partOfSpeech="n" />
+        <Sense id="gtzan-en-disco-sense-0-n" synset="gtzan-en-disco-synset-0-n" />
+    </LexicalEntry>
+
+    <LexicalEntry id="gtzan-en-rock-n">
+        <Lemma writtenForm="rock" partOfSpeech="n" />
+        <Sense id="gtzan-en-rock-sense-0-n" synset="gtzan-en-rock-synset-0-n" />
+    </LexicalEntry>
+
+    <LexicalEntry id="gtzan-en-metal-n">
+        <Lemma writtenForm="metal" partOfSpeech="n" />
+        <Sense id="gtzan-en-metal-sense-0-n" synset="gtzan-en-metal-synset-0-n" />
+    </LexicalEntry>
+
+    <LexicalEntry id="gtzan-en-jazz-n">
+        <Lemma writtenForm="jazz" partOfSpeech="n" />
+        <Sense id="gtzan-en-jazz-sense-0-n" synset="gtzan-en-jazz-synset-0-n" />
+    </LexicalEntry>
+
+    <LexicalEntry id="gtzan-en-blues-n">
+        <Lemma writtenForm="blues" partOfSpeech="n" />
+        <Sense id="gtzan-en-blues-sense-0-n" synset="gtzan-en-blues-synset-0-n" />
+    </LexicalEntry>
+
+    <LexicalEntry id="gtzan-en-reggae-n">
+        <Lemma writtenForm="reggae" partOfSpeech="n" />
+        <Sense id="gtzan-en-reggae-sense-0-n" synset="gtzan-en-reggae-synset-0-n" />
+    </LexicalEntry>
+
+    <LexicalEntry id="gtzan-en-pop-n">
+        <Lemma writtenForm="pop" partOfSpeech="n" />
+        <Sense id="gtzan-en-pop-sense-0-n" synset="gtzan-en-pop-synset-0-n" />
+    </LexicalEntry>
+
+    <LexicalEntry id="gtzan-en-hiphop-n">
+        <Lemma writtenForm="hiphop" partOfSpeech="n" />
+        <Sense id="gtzan-en-hiphop-sense-0-n" synset="gtzan-en-hiphop-synset-0-n" />
+    </LexicalEntry>
+
+    <LexicalEntry id="gtzan-en-classical-n">
+        <Lemma writtenForm="classical" partOfSpeech="n" />
+        <Sense id="gtzan-en-classical-sense-0-n" synset="gtzan-en-classical-synset-0-n" />
+    </LexicalEntry>
+
+    <LexicalEntry id="gtzan-en-country-n">
+        <Lemma writtenForm="country" partOfSpeech="n" />
+        <Sense id="gtzan-en-country-sense-0-n" synset="gtzan-en-country-synset-0-n" />
+    </LexicalEntry>
+
+    
+   <Synset id="gtzan-en-entity-synset-0-n" ili="in" partOfSpeech="n" members="gtzan-en-entity-sense-0-n">
+        <SynsetRelation relType="hyponym" target="gtzan-en-electronic_rock-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="gtzan-en-jazz_blues_reggae-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="gtzan-en-pop_hiphop-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="gtzan-en-classical_country-synset-0-n" />
+    </Synset>
+
+    <Synset id="gtzan-en-electronic_rock-synset-0-n" ili="in" partOfSpeech="n" members="gtzan-en-electronic_rock-sense-0-n">
+        <SynsetRelation relType="hypernym" target="gtzan-en-entity-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="gtzan-en-disco-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="gtzan-en-rock-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="gtzan-en-metal-synset-0-n" />
+    </Synset>
+
+    <Synset id="gtzan-en-jazz_blues_reggae-synset-0-n" ili="in" partOfSpeech="n" members="gtzan-en-jazz_blues_reggae-sense-0-n">
+        <SynsetRelation relType="hypernym" target="gtzan-en-entity-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="gtzan-en-jazz-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="gtzan-en-blues-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="gtzan-en-reggae-synset-0-n" />
+    </Synset>
+
+    <Synset id="gtzan-en-pop_hiphop-synset-0-n" ili="in" partOfSpeech="n" members="gtzan-en-pop_hiphop-sense-0-n">
+        <SynsetRelation relType="hypernym" target="gtzan-en-entity-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="gtzan-en-pop-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="gtzan-en-hiphop-synset-0-n" />
+    </Synset>
+    <Synset id="gtzan-en-classical_country-synset-0-n" ili="in" partOfSpeech="n" members="gtzan-en-classical_country-sense-0-n">
+        <SynsetRelation relType="hypernym" target="gtzan-en-entity-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="gtzan-en-classical-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="gtzan-en-country-synset-0-n" />
+    </Synset>
+
+    <Synset id="gtzan-en-disco-synset-0-n" ili="in" partOfSpeech="n" members="gtzan-en-disco-sense-0-n">
+        <SynsetRelation relType="hypernym" target="gtzan-en-electronic_rock-synset-0-n" />
+    </Synset>
+    <Synset id="gtzan-en-rock-synset-0-n" ili="in" partOfSpeech="n" members="gtzan-en-rock-sense-0-n">
+        <SynsetRelation relType="hypernym" target="gtzan-en-electronic_rock-synset-0-n" />
+    </Synset>
+    <Synset id="gtzan-en-metal-synset-0-n" ili="in" partOfSpeech="n" members="gtzan-en-metal-sense-0-n">
+        <SynsetRelation relType="hypernym" target="gtzan-en-electronic_rock-synset-0-n" />
+    </Synset>
+
+    <Synset id="gtzan-en-jazz-synset-0-n" ili="in" partOfSpeech="n" members="gtzan-en-jazz-sense-0-n">
+        <SynsetRelation relType="hypernym" target="gtzan-en-jazz_blues_reggae-synset-0-n" />
+    </Synset>
+    <Synset id="gtzan-en-blues-synset-0-n" ili="in" partOfSpeech="n" members="gtzan-en-blues-sense-0-n">
+        <SynsetRelation relType="hypernym" target="gtzan-en-jazz_blues_reggae-synset-0-n" />
+    </Synset>
+    <Synset id="gtzan-en-reggae-synset-0-n" ili="in" partOfSpeech="n" members="gtzan-en-reggae-sense-0-n">
+        <SynsetRelation relType="hypernym" target="gtzan-en-jazz_blues_reggae-synset-0-n" />
+    </Synset>
+
+    <Synset id="gtzan-en-pop-synset-0-n" ili="in" partOfSpeech="n" members="gtzan-en-pop-sense-0-n">
+        <SynsetRelation relType="hypernym" target="gtzan-en-pop_hiphop-synset-0-n" />
+    </Synset>
+    <Synset id="gtzan-en-hiphop-synset-0-n" ili="in" partOfSpeech="n" members="gtzan-en-hiphop-sense-0-n">
+        <SynsetRelation relType="hypernym" target="gtzan-en-pop_hiphop-synset-0-n" />
+    </Synset>
+
+    <Synset id="gtzan-en-classical-synset-0-n" ili="in" partOfSpeech="n" members="gtzan-en-classical-sense-0-n">
+        <SynsetRelation relType="hypernym" target="gtzan-en-classical_country-synset-0-n" />
+    </Synset>
+    <Synset id="gtzan-en-country-synset-0-n" ili="in" partOfSpeech="n" members="gtzan-en-country-sense-0-n">
+        <SynsetRelation relType="hypernym" target="gtzan-en-classical_country-synset-0-n" />
+    </Synset>
+    </Lexicon>
+</LexicalResource>

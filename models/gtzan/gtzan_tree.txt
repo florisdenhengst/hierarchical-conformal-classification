@@ -1,0 +1,16 @@
+owl:Thing
+├── :POP
+│   ├── :hiphop
+│   └── :pop
+├── :classical_country
+│   ├── :classical
+│   └── :country
+├── :electronic_rock
+│   ├── :disco
+│   ├── :metal
+│   └── :rock
+└── :jazz_blues_reggae
+    ├── :blues
+    ├── :jazz
+    └── :reggae
+

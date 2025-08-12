@@ -1,0 +1,8 @@
+codecov
+flake8
+mypy
+pandas
+pytest
+pytest-cov
+scikit-learn
+typed-ast

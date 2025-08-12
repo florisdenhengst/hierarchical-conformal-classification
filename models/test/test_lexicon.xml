@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE LexicalResource SYSTEM "http://globalwordnet.github.io/schemas/WN-LMF-1.1.dtd">
+<LexicalResource xmlns:dc="https://globalwordnet.github.io/schemas/dc/">
+    <Lexicon
+        id="hcptest-en"
+        label="Wordnet for the HCP testing purposes"
+        language="en"
+        email="f.den.hengst@vu.nl"
+        license="https://creativecommons.org/licenses/by/4.0/"
+        version="1.0"
+    >
+    <LexicalEntry id="hcptest-en-menuitem-n">
+        <Lemma writtenForm="menuitem" partOfSpeech="n" />
+        <Sense id="hcptest-en-menuitem-sense-0-n" synset="hcptest-en-menuitem-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="hcptest-en-lunch-n">
+        <Lemma writtenForm="lunch" partOfSpeech="n" />
+        <Sense id="hcptest-en-lunch-sense-0-n" synset="hcptest-en-lunch-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="hcptest-en-sandwich-n">
+        <Lemma writtenForm="sandwich" partOfSpeech="n" />
+        <Sense id="hcptest-en-sandwich-sense-0-n" synset="hcptest-en-sandwich-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="hcptest-en-cheesesandwich-n">
+        <Lemma writtenForm="cheesesandwich" partOfSpeech="n" />
+        <Sense id="hcptest-en-cheesesandwich-sense-0-n" synset="hcptest-en-cheesesandwich-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="hcptest-en-hamsandwich-n">
+        <Lemma writtenForm="hamsandwich" partOfSpeech="n" />
+        <Sense id="hcptest-en-hamsandwich-sense-0-n" synset="hcptest-en-hamsandwich-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="hcptest-en-tunasandwich-n">
+        <Lemma writtenForm="tunasandwich" partOfSpeech="n" />
+        <Sense id="hcptest-en-tunasandwich-sense-0-n" synset="hcptest-en-tunasandwich-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="hcptest-en-salad-n">
+        <Lemma writtenForm="salad" partOfSpeech="n" />
+        <Sense id="hcptest-en-salad-sense-0-n" synset="hcptest-en-salad-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="hcptest-en-caesarsalad-n">
+        <Lemma writtenForm="caesarsalad" partOfSpeech="n" />
+        <Sense id="hcptest-en-caesarsalad-sense-0-n" synset="hcptest-en-caesarsalad-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="hcptest-en-greeksalad-n">
+        <Lemma writtenForm="greeksalad" partOfSpeech="n" />
+        <Sense id="hcptest-en-greeksalad-sense-0-n" synset="hcptest-en-greeksalad-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="hcptest-en-breakfast-n">
+        <Lemma writtenForm="breakfast" partOfSpeech="n" />
+        <Sense id="hcptest-en-breakfast-sense-0-n" synset="hcptest-en-breakfast-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="hcptest-en-omelette-n">
+        <Lemma writtenForm="omelette" partOfSpeech="n" />
+        <Sense id="hcptest-en-omelette-sense-0-n" synset="hcptest-en-omelette-synset-0-n" />
+    </LexicalEntry>
+    <LexicalEntry id="hcptest-en-pancakes-n">
+        <Lemma writtenForm="pancakes" partOfSpeech="n" />
+        <Sense id="hcptest-en-pancakes-sense-0-n" synset="hcptest-en-pancakes-synset-0-n" />
+    </LexicalEntry>
+    
+
+   <Synset id="hcptest-en-menuitem-synset-0-n" ili="in" partOfSpeech="n" members="hcptest-en-menuitem-sense-0-n">
+        <SynsetRelation relType="hyponym" target="hcptest-en-lunch-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="hcptest-en-breakfast-synset-0-n" />
+    </Synset>
+    <Synset id="hcptest-en-lunch-synset-0-n" ili="in" partOfSpeech="n" members="hcptest-en-lunch-sense-0-n">
+        <SynsetRelation relType="hypernym" target="hcptest-en-menuitem-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="hcptest-en-sandwich-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="hcptest-en-salad-synset-0-n" />        
+    </Synset>
+    <Synset id="hcptest-en-sandwich-synset-0-n" ili="in" partOfSpeech="n" members="hcptest-en-sandwich-sense-0-n">
+        <SynsetRelation relType="hypernym" target="hcptest-en-lunch-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="hcptest-en-cheesesandwich-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="hcptest-en-hamsandwich-synset-0-n" />        
+        <SynsetRelation relType="hyponym" target="hcptest-en-tunasandwich-synset-0-n" />
+    </Synset>
+    <Synset id="hcptest-en-cheesesandwich-synset-0-n" ili="in" partOfSpeech="n" members="hcptest-en-sandwich-sense-0-n">
+        <SynsetRelation relType="hypernym" target="hcptest-en-sandwich-synset-0-n" />
+    </Synset>
+    <Synset id="hcptest-en-hamsandwich-synset-0-n" ili="in" partOfSpeech="n" members="hcptest-en-hamsandwich-sense-0-n">
+        <SynsetRelation relType="hypernym" target="hcptest-en-sandwich-synset-0-n" />
+    </Synset>
+    <Synset id="hcptest-en-tunasandwich-synset-0-n" ili="in" partOfSpeech="n" members="hcptest-en-tunasandwich-sense-0-n">
+        <SynsetRelation relType="hypernym" target="hcptest-en-sandwich-synset-0-n" />
+    </Synset>
+    <Synset id="hcptest-en-salad-synset-0-n" ili="in" partOfSpeech="n" members="hcptest-en-salad-sense-0-n">
+        <SynsetRelation relType="hypernym" target="hcptest-en-lunch-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="hcptest-en-caesarsalad-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="hcptest-en-greeksalad-synset-0-n" />
+    </Synset>
+    <Synset id="hcptest-en-breakfast-synset-0-n" ili="in" partOfSpeech="n" members="hcptest-en-breakfast-sense-0-n">
+        <SynsetRelation relType="hypernym" target="hcptest-en-menuitem-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="hcptest-en-omelette-synset-0-n" />
+        <SynsetRelation relType="hyponym" target="hcptest-en-pancakes-synset-0-n" />
+    </Synset>
+    <Synset id="hcptest-en-greeksalad-synset-0-n" ili="in" partOfSpeech="n" members="hcptest-en-greeksalad-sense-0-n">
+        <SynsetRelation relType="hypernym" target="hcptest-en-salad-synset-0-n" />
+    </Synset>
+    <Synset id="hcptest-en-caesarsalad-synset-0-n" ili="in" partOfSpeech="n" members="hcptest-en-caesarsalad-sense-0-n">
+        <SynsetRelation relType="hypernym" target="hcptest-en-salad-synset-0-n" />
+    </Synset>
+    <Synset id="hcptest-en-omelette-synset-0-n" ili="in" partOfSpeech="n" members="hcptest-en-omelette-sense-0-n">
+        <SynsetRelation relType="hypernym" target="hcptest-en-breakfast-synset-0-n" />
+    </Synset>
+    <Synset id="hcptest-en-pancakes-synset-0-n" ili="in" partOfSpeech="n" members="hcptest-en-pancakes-sense-0-n">
+        <SynsetRelation relType="hypernym" target="hcptest-en-breakfast-synset-0-n" />
+    </Synset>
+    
+    </Lexicon>
+</LexicalResource>

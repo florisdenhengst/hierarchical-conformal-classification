@@ -1,0 +1,15 @@
+Entity
+├── :Classical/Country
+│   ├── :Classical
+│   └── :Country
+├── :Electronic/Rock
+│   ├── :Disco
+│   ├── :Metal
+│   └── :Rock
+├── :Jazz/Blues/Reggae
+│   ├── :Blues
+│   ├── :Jazz
+│   └── :Reggae
+└── :POP
+    ├── :Hiphop
+    └── :Pop
