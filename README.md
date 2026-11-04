@@ -1,28 +1,65 @@
-# hierarchical-conformal-prediction
+# Hierarchical Conformal Classification (HCC)
 
-## Prerequisites
-Python 3.10.14
+Code for the NeurIPS 2026 paper *Hierarchical Conformal Classification*. HCC produces conformal prediction
+sets that may contain both leaf classes and internal nodes of a class hierarchy (a tree or a DAG), trading
+off set size against specificity while keeping a finite-sample coverage guarantee.
 
-## Installation and setup
+- Paper: <link>
+- Data (classifier scores, splits and taxonomies): https://huggingface.co/datasets/florisdh/hierarchical-conformal-classification
+
+## Setup
+Requires Python 3.10.
+
 ```bash
-python -m venv .venv
-source .venv/bin/activate
+python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-```
-
-You need to install and add the lexicons we used in our experiments:
-```python
-import wn
-wn.add("models/dbpedia14/dbpedia14_lexicon.xml")
-wn.add("models/gtzan/gtzan_lexicon.xml")
-wn.add("./models/imagenet/lexicon.xml")
-```
-
-```bash
+pip install -e MAPIE          # fork of MAPIE with the Westfall-Young maxT correction
 python -m wn download omw-en:1.4
+python -c "import wn; [wn.add(f) for f in ['models/dbpedia14/dbpedia14_lexicon.xml', 'models/gtzan/gtzan_lexicon.xml', 'models/imagenet/lexicon.xml']]"
 ```
 
-Download the imagenet files [here](https://drive.google.com/file/d/1woeukWQTV0YAvKWPpRCpE_GiefN-nuPU/view?usp=sharing), place the ``.tar.gz`` file in ``data/imagenet/`` and uncompress.
+The `dbp` and `gtz` score files are included in `models/`. Download the ImageNet scores from the Hugging Face
+dataset and place them at `data/imagenet/predictions_val.csv`.
+
+## Running
+```bash
+python hcc.py DATASET TAXONOMY MAPPING_FILE OUTPUT_FILE [TREE] [PER_LAYER] [ALPHA] [BETA] [SEED] \
+              [LEAFS_ONLY] [METHOD] [DYNAMIC] [LOSS_APPROACH] [CP_METHOD] [--propagation leaf-cover]
+```
+
+| Argument | Values | Meaning |
+|---|---|---|
+| `TREE` | `True`/`False` | treat the hierarchy as a tree (one true node per cover) or a DAG |
+| `PER_LAYER` | `True`/`False` | search one cover per layer (needed for ImageNet) or all NOL-covers |
+| `ALPHA` | float | target error level |
+| `BETA` | float or `betas` | trade-off between set size and covered leaves; `betas` sweeps 20 values |
+| `LEAFS_ONLY` | `True`/`False` | standard CP on the leaves only (baseline) |
+| `METHOD` | `hierarchical`, `multi-label` | HCC score, or the CRC recall-loss ablation |
+| `DYNAMIC` | `True`, `False`, `nobc` | dynamic pruning; no dynamic pruning; no multiple-testing correction |
+| `LOSS_APPROACH` | `first` (default in the paper), `last`, `costs` | which true node defines the nonconformity score |
+| `CP_METHOD` | `lac`, `raps` | base conformal score |
+| `--propagation` | `levels` (default), `leaf-cover` (used in the paper) | how classifier scores are propagated to internal nodes |
+
+`SEED` seeds NumPy and Python; the calibration/test split itself is fixed (stratified 20/80, `random_state=42`).
+Set `HCC_N_JOBS` to control parallelism. Each run writes a results CSV and a `*_timing.csv`.
+
+| Script | Reproduces |
+|---|---|
+| `run_all.sh` | Table 1 (main results and ablations) |
+| `run_all_betas.sh` | Figure: set size and covered leaves for varying β |
+| `run_alphas.sh` | Figure: coverage, set size and covered leaves for varying α |
+| `time_all.sh` | runtimes (runs with `sudo` and `nice`) |
+
+Results are evaluated in `analyse_hcc.ipynb`. A full `run_all.sh` takes several hours, dominated by `dbp`
+(about 50 minutes per HCC run); ImageNet runs need about 9 GB of RAM.
+
+**Caching.** Inference and the default score propagation are cached in `/tmp` and `/tmp/cache`. Cache keys do
+not include the code version; clear them after changing the code:
+`rm -rf /tmp/cache /tmp/infer_mm_dynamic_*.pkl`.
+
+## Tests
+`MAPIE/mapie/tests/test_multiple_testing.py` tests the multiple-testing correction (`pytest`). Note that
+`tests.py` removes and re-adds the `wn` lexicons in your local `wn` database.
 
 ## Code Structure
 The code is structured as follows:
@@ -48,10 +85,21 @@ The code is structured as follows:
         * `id_to_label.py`: mappings to json
         * `transform_imagenet_mapping.py`: from `.txt` to `.json`
 
-
-
-
 ## Additional references
 * [wn documentation](https://wn.readthedocs.io/en/latest/)
 * [mappings imagenet2wordnet](https://gist.github.com/fnielsen/4a5c94eaa6dcdf29b7a62d886f540372)
 
+## Attribution
+Please cite
+
+```
+@inproceedings{denhengst2026hierarchical,
+  title     = {Hierarchical Conformal Classification},
+  author    = {den Hengst, Floris and Blin, In{\`e}s and Mohammadi, Majid and
+               Shah, Syed Ihtesham and Younesian, Taranah},
+  booktitle = {Advances in Neural Information Processing Systems},
+  publisher = {Curran Associates, Inc.},
+  volume = {39, Main Conference},
+  year = {2026}
+}
+```
