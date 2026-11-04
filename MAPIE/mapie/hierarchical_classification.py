@@ -371,7 +371,6 @@ class HierarchicalMapieClassifier(BaseEstimator, ClassifierMixin):
             If ``cv`` is `"prefit"`` or ``"split"`` and ``method`` is not
             ``"base"``.
         """
-        # TODO FdH: update
         self._check_parameters()
         cv = check_cv(
             self.cv, test_size=self.test_size, random_state=self.random_state
@@ -388,7 +387,6 @@ class HierarchicalMapieClassifier(BaseEstimator, ClassifierMixin):
         estimator = check_estimator_classification(X, y, cv, self.estimator)
         self.n_features_in_ = check_n_features_in(X, cv, estimator)
 
-        # TODO FdH: fix _get_classes_info
         # self.n_classes_, self.classes_ = self._get_classes_info(estimator, y)
         # self.label_encoder_ = self._get_label_encoder()
         y_enc = y #self.label_encoder_.transform(y)

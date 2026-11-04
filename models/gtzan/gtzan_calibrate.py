@@ -116,7 +116,6 @@ sets = {}
 
 for idx, set in zip(X_test.index, ps[:, :, target_index]):
     predicted_classes = np.where(set)[0]
-    # TODO FdH: ensure that there is at least one element in the set
     if len(predicted_classes) == 0: continue
     labels = itemgetter(*predicted_classes)(gtzan_labels)
     if isinstance(labels, tuple):

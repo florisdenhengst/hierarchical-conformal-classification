@@ -25,7 +25,6 @@ dataset_path = path + "/Data/genres_original"
 model_path = "models/gtzan/gtzan_xgboost.pkl"
 predictions_path = "gtzan_xgboost.csv"
 
-# # TODO FdH: load dataset
 # # data from https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification/data
 # df = pd.read_csv('../../data/genre/genre_3_sec.csv')
 # df = df.drop(labels="filename", axis=1)
