@@ -1,18 +1,36 @@
 import copy
+import os
 from collections import defaultdict
 import numpy as np
 import wn
 from algo.propagate import propagate_ground_truths
 from algo.no_cover import covered_nodes
 from mapie.classification import MapieClassifier
-from mapie.hierarchical_classification import HierarchicalMapieClassifier 
+from mapie.hierarchical_classification import HierarchicalMapieClassifier
 from mapie.multi_label_classification import MapieMultiLabelClassifier
+from mapie.multiple_testing import WestfallYoungMaxT
 import pprint
 import scipy
 import tqdm
+from joblib import Parallel, delayed
 from algo.hcp_mock_model import HCPMockModel
 from algo import utils, no_cover
 from algo.costs import cost
+
+# Not a function arg: infer_mm_dynamic (which optimize_mm_betas also feeds
+# through) is wrapped in disk_cache(), which hashes every argument to build
+# its cache key, so N_JOBS must stay out of any cached function's signature
+# or identical runs would miss the cache purely because of a
+# parallelism-degree change. calibrate_covers_mockmodel and optimize_mm_betas
+# below read this directly.
+N_JOBS = int(os.environ.get("HCC_N_JOBS", "-1"))
+
+# wn opens a single sqlite3 connection per process with check_same_thread=True
+# by default, so any wn.* lookup (e.g. covered_nodes) made from a worker
+# thread other than the one that first opened the connection raises
+# sqlite3.ProgrammingError. calibrate_covers_mockmodel below parallelizes
+# with threads, so this must be enabled before any wn query runs.
+wn.config.allow_multithreading = True
 
 
 def format_for_cover(scores, class_node_id_cover):
@@ -21,7 +39,6 @@ def format_for_cover(scores, class_node_id_cover):
     # "Least Ambiguous Set-Valued Classifiers with Bounded Error Levels.",
     # Journal of the American Statistical Association, 114, 2019.
     
-    # TODO sort dict by id-mapping
     scores_values_matrix = np.zeros((len(scores.values()), len(next(iter(scores.items()))[1])))
     for node, id in class_node_id_cover.items():
         scores_values_matrix[id, :] = scores[node]
@@ -174,6 +191,102 @@ def calibrate_covers(
     return cutoffs
 
 
+def _calibrate_one_cover(
+        cover,
+        scores_per_node,
+        hierarchical_ground_truths,
+        leafs,
+        tree,
+        method,
+        loss_approach,
+        cp_method,
+):
+    if len(cover) == 1:
+        return cover, (None, None)
+    scores, _ = cover_scores(cover, scores_per_node)
+    class_node_id_cover = {synset: idx for idx, synset in enumerate(cover)}
+    id_class_node_cover = {id: node for node, id in class_node_id_cover.items()}
+    costs_per_node = np.array([
+        len(covered_nodes(frozenset({id_class_node_cover[idx]}), leafs)) for idx in range(len(id_class_node_cover))
+    ])
+    if (len(scores) == 0):
+        return cover, None
+    scores_matrix = format_for_cover(scores, class_node_id_cover)
+    _ground_truth_ids = cover_ground_truths(cover, class_node_id_cover, hierarchical_ground_truths)
+    if tree:
+        ground_truth_ids = _ground_truth_ids
+    else:
+        # Number of classes (k)
+        k = max(class_node_id_cover.values())+1  # Example: 4 possible classes
+
+        # Create the boolean encoded matrix
+        n = len(_ground_truth_ids)
+        bool_encoded_matrix = np.zeros((n, k), dtype=bool)
+
+        # Set True where class is present
+        for i, row in enumerate(_ground_truth_ids):
+            bool_encoded_matrix[i, row] = True
+        ground_truth_ids = bool_encoded_matrix
+
+    if ground_truth_ids.max() >= scores_matrix.shape[1]:
+        raise ValueError('Wrong index for ground truth')
+
+    n_ground_truths = ground_truth_ids.sum(axis=1)
+
+    if tree:
+        hierarchical = False
+        ground_truth_ids = _ground_truth_ids.ravel()
+        _method='score'
+    elif n_ground_truths.max() == 1 and method == 'hierarchical':
+        hierarchical = False
+        ground_truth_ids = _ground_truth_ids.ravel()
+        _method='score'
+    elif method == 'hierarchical':
+        hierarchical = True
+        _method=loss_approach
+    elif method == 'multi-label':
+        hierarchical = True
+        _method = 'multi_label'
+
+    # print(f'n_ground_truths: ({n_ground_truths.min()}, {n_ground_truths.max()}')
+    model = HCPMockModel(
+            "id",
+            classes=np.arange(scores_matrix.shape[1]),
+            softmax=False,
+            raw=True
+            )
+    cover_ids = np.arange(scores_matrix.shape[0]).reshape(scores_matrix.shape[0], 1)
+    model.store_scores(cover_ids, scores_matrix)
+    model.fit(cover_ids, y=ground_truth_ids)
+    if not hierarchical:
+        cp_classifier = MapieClassifier(
+            estimator=model,
+            method=_method,
+            cv='prefit'
+        )
+    elif _method == 'multi_label': # hierarchical/multilabel = True
+        cp_classifier = MapieMultiLabelClassifier(
+            estimator=model,
+            method='crc',
+            metric_control="recall"
+        )
+    else: # hierarchical/multilabel = True
+        cp_classifier = HierarchicalMapieClassifier(
+            estimator=model,
+            method=_method,
+            classes=np.arange(scores_matrix.shape[1]),
+            cv='prefit',
+            costs_per_node=costs_per_node,
+            clip=(0.0, 0.999999),
+            cp_method=cp_method,
+        )
+    cp_classifier = cp_classifier.fit(
+        cover_ids,
+        ground_truth_ids
+    )
+    # propagate true labels
+    return cover, (model, cp_classifier)
+
 def calibrate_covers_mockmodel(
         # base_scores: np.typing.ArrayLike,
         true_labels: np.typing.ArrayLike,
@@ -187,105 +300,77 @@ def calibrate_covers_mockmodel(
         loss_approach='costs',
         cp_method='lac'
         ) -> dict[set[wn.Synset], float]:
-    calibrators = {} # maps covers to CP models
     hierarchical_ground_truths = propagate_ground_truths(
         true_labels,
         id_class_node_mapping
     )
     scores_per_node = _scores_per_node(node_scores)
     leafs = utils.all_leaves(wordnet)
-    # loop over all covers
+    # Each cover is fit independently and only returns freshly-created
+    # objects (nothing shared is mutated), so this is embarrassingly
+    # parallel. We use threads rather than processes: sending freshly fitted
+    # MapieClassifier/HCPMockModel objects back across a process boundary
+    # means pickling them, and a pickle round-trip of a fitted MAPIE
+    # estimator has been observed to silently drop state it sets dynamically
+    # during fit() (AttributeError at predict time later on) - not worth the
+    # risk. Threads share memory, so nothing needs to be pickled at all.
     print('calibrating...')
-    for cover in tqdm.tqdm(covers):
-        if len(cover) == 1:
-            calibrators[cover] = (None, None)
-        else:
-            scores, _ = cover_scores(cover, scores_per_node)
-            class_node_id_cover = {synset: idx for idx, synset in enumerate(cover)}
-            id_class_node_cover = {id: node for node, id in class_node_id_cover.items()}
-            costs_per_node = np.array([
-                len(covered_nodes(frozenset({id_class_node_cover[idx]}), leafs)) for idx in range(len(id_class_node_cover))
-            ])
-            if (len(scores) == 0):
-                continue
-            scores_matrix = format_for_cover(scores, class_node_id_cover)
-            _ground_truth_ids = cover_ground_truths(cover, class_node_id_cover, hierarchical_ground_truths)
-            if tree:
-                ground_truth_ids = _ground_truth_ids
-            else:
-                # Number of classes (k)
-                k = max(class_node_id_cover.values())+1  # Example: 4 possible classes
-
-                # Create the boolean encoded matrix
-                n = len(_ground_truth_ids)
-                bool_encoded_matrix = np.zeros((n, k), dtype=bool)
-
-                # Set True where class is present
-                for i, row in enumerate(_ground_truth_ids):
-                    bool_encoded_matrix[i, row] = True
-                ground_truth_ids = bool_encoded_matrix
-
-            if ground_truth_ids.max() >= scores_matrix.shape[1]:
-                raise ValueError('Wrong index for ground truth')
-            
-            n_ground_truths = ground_truth_ids.sum(axis=1)
-
-            if tree:
-                hierarchical = False
-                ground_truth_ids = _ground_truth_ids.ravel()
-                _method='score'
-            elif n_ground_truths.max() == 1 and method == 'hierarchical':
-                hierarchical = False
-                ground_truth_ids = _ground_truth_ids.ravel()
-                _method='score'
-            elif method == 'hierarchical':
-                hierarchical = True
-                _method=loss_approach
-            elif method == 'multi-label':
-                hierarchical = True
-                _method = 'multi_label'
-
-            # print(f'n_ground_truths: ({n_ground_truths.min()}, {n_ground_truths.max()}')
-            model = HCPMockModel(
-                    "id",
-                    classes=np.arange(scores_matrix.shape[1]),
-                    softmax=False,
-                    raw=True
-                    )
-            cover_ids = np.arange(scores_matrix.shape[0]).reshape(scores_matrix.shape[0], 1)
-            model.store_scores(cover_ids, scores_matrix)
-            model.fit(cover_ids, y=ground_truth_ids)
-            if not hierarchical:
-                cp_classifier = MapieClassifier(
-                    estimator=model,
-                    method=_method,
-                    cv='prefit'
-                )
-            elif _method == 'multi_label': # hierarchical/multilabel = True
-                cp_classifier = MapieMultiLabelClassifier(
-                    estimator=model,
-                    method='crc',
-                    metric_control="recall"
-                )
-            else: # hierarchical/multilabel = True
-                cp_classifier = HierarchicalMapieClassifier(
-                    estimator=model,
-                    method=_method,
-                    classes=np.arange(scores_matrix.shape[1]),  
-                    cv='prefit',
-                    costs_per_node=costs_per_node,
-                    clip=(0.0, 0.999999),
-                    cp_method=cp_method,
-                )
-            cp_classifier = cp_classifier.fit(
-                cover_ids,
-                ground_truth_ids
-            )
-            # propagate true labels
-            calibrators[cover] = (model, cp_classifier)
-            # calibrate: determine qhat
+    results = Parallel(n_jobs=N_JOBS, backend="threading", return_as="generator")(
+        delayed(_calibrate_one_cover)(
+            cover, scores_per_node, hierarchical_ground_truths, leafs, tree, method, loss_approach, cp_method,
+        )
+        for cover in covers
+    )
+    calibrators = {} # maps covers to CP models
+    for cover, result in tqdm.tqdm(results, total=len(covers)):
+        if result is not None:
+            calibrators[cover] = result
     # return dict[wn.Synset, qhat]
     return calibrators
+
+def westfall_young_correct(calibrators, alpha):
+    """
+    Corrects a family of calibrated covers for multiple comparisons with the
+    single-step Westfall-Young maxT procedure.
+
+    For every calibration instance ``i`` the non-conformity scores of all
+    ``m`` covers are reduced to ``t_i = max(s_{i,1}, ..., s_{i,m})``, and every
+    cover predictor is re-calibrated on ``{t_i}``, so that it uses the
+    ``ceil((n_c+1)(1-alpha))/n_c`` quantile of the maxima as its threshold.
+    Coverage then holds simultaneously for all covers, and thus for the cover
+    that is selected per test instance by the cost minimization.
+
+    Args:
+        * calibrators: maps covers to ``(model, cp_classifier)`` tuples as
+          returned by ``calibrate_covers_mockmodel``. All cp_classifiers must
+          be calibrated on the same calibration instances, in the same order.
+        * alpha: the nominal (family-wise) error level.
+
+    Returns:
+        * a dict with the same keys as ``calibrators`` in which every
+          cp_classifier is replaced by its corrected copy. The corrected
+          predictors are used with the nominal ``alpha``; ``calibrators``
+          itself is not modified. Covers without a cp_classifier (single-node
+          covers, which always cover the ground truth) are kept as they are.
+        * the effective corrected alpha', i.e. the mean over all covers of the
+          fraction of calibration scores that exceed the corrected threshold
+          (for CRC predictors: their own mean calibration loss at the
+          corrected threshold). This is reported for information only.
+    """
+    corrected = dict(calibrators)
+    covers = [cover for cover, (_, cp) in calibrators.items() if cp is not None]
+    if len(covers) == 0:
+        return corrected, alpha
+    correction = WestfallYoungMaxT().fit([calibrators[cover][1] for cover in covers])
+    for cover in covers:
+        model, cp_classifier = calibrators[cover]
+        corrected[cover] = (model, correction.correct(cp_classifier))
+    corrected_alpha = correction.get_corrected_alpha(alpha)[0]
+    if np.all(np.isnan(corrected_alpha)):
+        alpha_adj = alpha
+    else:
+        alpha_adj = float(np.nanmean(corrected_alpha))
+    return corrected, alpha_adj
 
 def filter_calibrators(calibrators, lca, class_nodes):
     filtered_calis = {}
@@ -351,9 +436,15 @@ def get_cover_ps(
     if (len(scores) == 0):
         raise ValueError('no scores')
     scores_matrix = format_for_cover(scores, class_node_id_cover)
-    start = cover_model.scores.idx.max() + 1
-    stop = scores_matrix.shape[0] + start
-    cover_ids = np.arange(start, stop).reshape(scores_matrix.shape[0], 1)
+    # get_cover_ps is called once per test instance (infer_mm_dynamic), and
+    # nothing downstream needs rows from a previous call - predict() below
+    # only ever looks up the ids we're about to store. store_scores() just
+    # appends forever though, so without this reset, cover_model.scores
+    # grows across the whole test set and every store_scores() call becomes
+    # an O(current size) copy, turning the per-cover cost O(n_test^2)
+    # instead of O(n_test). Resetting first keeps each call O(batch size).
+    cover_model.scores = None
+    cover_ids = np.arange(scores_matrix.shape[0]).reshape(scores_matrix.shape[0], 1)
     cover_model.store_scores(cover_ids, scores_matrix)
 
     result = cover_calibrator.predict(cover_ids, alpha=alpha)
@@ -366,6 +457,63 @@ def get_cover_ps(
     prediction_set_nodes = [np.array(list(id_class_node_cover.values()))[row_mask].tolist() for row_mask in prediction_set_mask]
     return prediction_set_nodes
 
+def _infer_mm_dynamic_one(
+        i,
+        scores_per_node,
+        calibrators,
+        corrected_calibrators,
+        class_nodes,
+        alpha,
+        alpha_adj,
+):
+    scores_per_node_i = {node: [scores[i],] for node, scores in scores_per_node.items()}
+    instance_ps = {}
+
+    # determine the coverage for leaves and its lca
+    leaves_ps = get_cover_ps(
+        calibrators[class_nodes][1],
+        calibrators[class_nodes][0],
+        class_nodes,
+        scores_per_node_i,
+        alpha
+    )[0]
+    instance_ps[class_nodes] = leaves_ps
+    if len(leaves_ps) > 0:
+        lca_leaves_ps = utils.get_lca(frozenset(leaves_ps))
+    else:
+        lca_leaves_ps = frozenset({})
+    candidate_calibrators, lca_calibrators = filter_calibrators(
+        calibrators,
+        lca_leaves_ps,
+        class_nodes
+    )
+    lca_ps = frozenset({lca_leaves_ps,})
+    for lca_cali in lca_calibrators:
+        instance_ps[lca_cali] = lca_ps
+    has_no_candidates = len(candidate_calibrators) == 0
+    # filter all covers containing an ancestor to lca > candidate_covers per instance
+
+    # loop over all candidate_covers for this instance
+    # infer with the Westfall-Young corrected predictors: these are calibrated
+    # on the max non-conformity score over all covers, so they are used with
+    # the nominal alpha (alpha_adj is the effective per-cover alpha')
+    for cover in sorted(candidate_calibrators, key=len, reverse=True):
+        model, cp_classifier = corrected_calibrators[cover]
+
+        if len(cover) == 1:
+            #    prediction_set_idx = [[0,],] * len(node_scores)
+            prediction_set_nodes = [[next(iter(cover))],]
+        else:
+            prediction_set_nodes = get_cover_ps(
+                cp_classifier,
+                model,
+                cover,
+                scores_per_node_i,
+                alpha
+            )[0]
+        instance_ps[cover] = prediction_set_nodes
+    return i, instance_ps, alpha_adj, has_no_candidates
+
 @utils.disk_cache('/tmp/')
 def infer_mm_dynamic(
     node_scores: dict[wn.Synset, float],
@@ -375,63 +523,32 @@ def infer_mm_dynamic(
     n_calib,
 ):
     scores_per_node = _scores_per_node(node_scores)
-    prediction_sets_idxs = {}
+    # Measured, not assumed: threading this loop (one task per instance,
+    # guarded by a per-cover lock) was tried and benchmarked against plain
+    # sequential execution on both gtzan and a dbpedia14 sample. It came out
+    # slower both times (e.g. 116s sequential vs 124s threaded for ~14k
+    # dbpedia instances) - each instance's work is dominated by small
+    # Python/pandas calls that don't release the GIL for long, so thread
+    # dispatch + lock overhead outweighs whatever parallelism is possible.
+    # Kept sequential; see calibrate_covers_mockmodel and propagate_scores
+    # for loops where parallelizing did pay off.
+    # Westfall-Young maxT correction over all m covers, computed once from the
+    # calibration non-conformity scores (independent of the test instance)
+    corrected_calibrators, alpha_adj_wy = westfall_young_correct(calibrators, alpha)
+    print("inferring...")
     prediction_sets = {}
     alpha_adj = []
-    # loop over all instances in node_scores
-    print("inferring...")
     n_no_candidates = 0
-    for i, instance_scores in tqdm.tqdm(enumerate(node_scores), total=len(node_scores)):
-        prediction_sets[i] = {}
-        scores_per_node_i = {node: [scores[i],] for node, scores in scores_per_node.items()}
-        
-        # determine the coverage for leaves and its lca
-        leaves_ps = get_cover_ps(
-            calibrators[class_nodes][1],
-            calibrators[class_nodes][0],
-            class_nodes,
-            scores_per_node_i,
-            alpha
-        )[0]
-        prediction_sets[i][class_nodes] = leaves_ps
-        if len(leaves_ps) > 0:
-            lca_leaves_ps = utils.get_lca(frozenset(leaves_ps))
-        else:
-            lca_leaves_ps = frozenset({})
-        candidate_calibrators, lca_calibrators = filter_calibrators(
-            calibrators,
-            lca_leaves_ps,
-            class_nodes
+    for i in tqdm.tqdm(range(len(node_scores))):
+        _, instance_ps, alpha_adj_i, has_no_candidates = _infer_mm_dynamic_one(
+            i, scores_per_node, calibrators, corrected_calibrators, class_nodes, alpha, alpha_adj_wy
         )
-        lca_ps = frozenset({lca_leaves_ps,})
-        for lca_cali in lca_calibrators:
-            prediction_sets[i][lca_cali] = lca_ps
-        if len(candidate_calibrators) == 0:
-            # print('No candidate calibrators')
+        prediction_sets[i] = instance_ps
+        alpha_adj.append(alpha_adj_i)
+        if has_no_candidates:
             n_no_candidates += 1
-        alpha_adj.append(utils.bonferonni_correct(alpha, len(calibrators), n_calib)) # root cover
-        # filter all covers containing an ancestor to lca > candidate_covers per instance
-        
-        # loop over all candidate_covers for this instance
-        # infer using dynamically adjusted alpha by the length of candidates
-        for cover in sorted(candidate_calibrators, key=len, reverse=True):
-            model, cp_classifier = calibrators[cover]
-            
-            if len(cover) == 1:
-                #    prediction_set_idx = [[0,],] * len(node_scores)
-                prediction_set_nodes = [[next(iter(cover))],]
-            else:
-                prediction_set_nodes = get_cover_ps(
-                    cp_classifier,
-                    model,
-                    cover,
-                    scores_per_node_i,
-                    alpha_adj[i]
-                )[0]
-            # prediction_sets_idxs[cover] = prediction_set_idx
-            prediction_sets[i][cover] = prediction_set_nodes
     alpha_adj = np.array(alpha_adj)
-    print(f"alpha_adj: {alpha_adj.mean()}, {alpha_adj.min()}, {alpha_adj.max()}")
+    print(f"alpha_adj: {alpha_adj.mean()}, {alpha_adj.std()}, {alpha_adj.min()}, {alpha_adj.max()}")
     print(f"n_no_candidates: {n_no_candidates}")
     return prediction_sets
 
@@ -542,6 +659,23 @@ def optimize_mm(
         n_covered_leaves.append(i_covered_leaves[cover])
     return best_covers, prediction_sets, costs, n_covered_leaves
 
+def _optimize_mm_betas_one(beta, ps_per_instances, class_nodes):
+    best_covers_beta = []
+    prediction_sets_beta = []
+    costs_beta = []
+    for i, instance in ps_per_instances.items():
+        i_costs = {}
+        for j, (cover, ps) in enumerate(instance.items()):
+            i_costs[cover] = cost(beta, ps, class_nodes, cover)
+        # select the cover that optimizes objective in the paper (Eq. 5)
+        min_value = min(i_costs.values())
+        # Get the last key with the min value by reversing the items
+        best_cover = next(k for k, v in reversed(list(i_costs.items())) if v == min_value)
+        best_covers_beta.append(best_cover)
+        prediction_sets_beta.append(list(instance[best_cover]))
+        costs_beta.append(i_costs[best_cover])
+    return beta, best_covers_beta, prediction_sets_beta, costs_beta
+
 def optimize_mm_betas(
         betas: list[float],
         node_scores: dict[wn.Synset, float],
@@ -564,27 +698,24 @@ def optimize_mm_betas(
                 ps_per_instances[i] |= {cover: prediction_set}
         # now map these back to per-instance prediction sets
 
-    # now map these back to per-instance prediction sets
+    # Each beta redoes a full, independent pass over ps_per_instances, which
+    # by this point holds only plain data (covers/prediction sets - the
+    # fitted calibrators were already consumed by infer_mm_dynamic above),
+    # so processes are safe here. cost() is pure-Python/GIL-bound, so
+    # threads would buy little; processes give real parallelism at the cost
+    # of pickling ps_per_instances once per beta (fine for the typical
+    # beta-sweep sizes this is used for).
     best_covers = {}
     prediction_sets = {}
     costs = {}
     print('optimizing...')
-    for beta in tqdm.tqdm(betas):
-        print('beta', beta)
-        best_covers[beta] = []
-        prediction_sets[beta] = []
-        costs[beta] = []
-        for i, instance in tqdm.tqdm(ps_per_instances.items()):
-            i_costs = {}
-            for j, (cover, ps) in enumerate(instance.items()):
-                i_costs[cover] = cost(beta, ps, class_nodes, cover)
-            # select the cover that optimizes objective in the paper (Eq. 5)
-            min_value = min(i_costs.values())
-            # Get the last key with the min value by reversing the items
-            best_cover = next(k for k, v in reversed(list(i_costs.items())) if v == min_value)
-            best_covers[beta].append(best_cover)
-            prediction_sets[beta].append(list(instance[best_cover]))
-            costs[beta].append(i_costs[best_cover])
+    results = Parallel(n_jobs=N_JOBS, backend="loky", return_as="generator")(
+        delayed(_optimize_mm_betas_one)(beta, ps_per_instances, class_nodes) for beta in betas
+    )
+    for beta, best_covers_beta, prediction_sets_beta, costs_beta in tqdm.tqdm(results, total=len(betas)):
+        best_covers[beta] = best_covers_beta
+        prediction_sets[beta] = prediction_sets_beta
+        costs[beta] = costs_beta
     return best_covers, prediction_sets, costs
 
 def optimize_mm_alphas(

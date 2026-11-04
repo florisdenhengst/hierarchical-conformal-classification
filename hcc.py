@@ -1,4 +1,5 @@
 import json
+import os
 import random
 import click
 import wn
@@ -6,14 +7,19 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 import numpy as np
 import algo.utils
-from algo.hierarchical_conformal_prediction import calibrate_covers_mockmodel, optimize_mm, optimize_mm_betas
+from algo.hierarchical_conformal_prediction import calibrate_covers_mockmodel, optimize_mm, optimize_mm_betas, westfall_young_correct
 from algo.propagate import propagate_scores
+from algo.propagate_leaf_cover import propagate_scores_leaf_cover
 from algo.no_cover import get_covers, get_leaf_node_cover
 import sys
 import time
 
 def calibrate():
     pass
+
+def timing_output_path(output_file):
+    base, ext = os.path.splitext(output_file)
+    return f"{base}_timing{ext or '.csv'}"
 
 def get_scores(dataframe):
     score_columns = [column for column in dataframe.columns if 'label_' in column]
@@ -35,6 +41,9 @@ def get_scores(dataframe):
 @click.argument("dynamic", default='True')
 @click.argument("loss_approach", default='first')
 @click.argument("cp_method", default='lac')
+@click.option("--propagation", type=click.Choice(['levels', 'leaf-cover']), default='levels', show_default=True,
+              help="Score propagation: 'levels' propagates level by level (algo.propagate), 'leaf-cover' gives "
+                   "every node the sum of the scores of its leaf cover (algo.propagate_leaf_cover).")
 def main(dataset,
          taxonomy,
          mapping_file,
@@ -48,7 +57,8 @@ def main(dataset,
          method="hierarchical",
          dynamic=True,
          loss_approach='score',
-         cp_method='lac'):
+         cp_method='lac',
+         propagation='levels'):
     """ Main """
     np.random.seed(seed)
     random.seed(seed)
@@ -93,25 +103,35 @@ def main(dataset,
     n_calib = len(y_calib)
     print(f"y_calib unique labels:{len(np.unique(y_calib))}, y_test unique labels: {len(np.unique(y_test))}")
     
+    t_start = time.time()
+    t0 = time.time()
     if leafs_only:
         covers = get_leaf_node_cover(wordnet)
         max_levels_propagate = 0
-    else:  
+    else:
         covers = get_covers(wordnet, per_layer)
         max_levels_propagate = None
+    t_covers = time.time() - t0
     _alpha = alpha
+    westfall_young = False
     if(dynamic == 'nobc'):
         dynamic = False
     elif dynamic == "True":
         dynamic =  True
     else:
         dynamic = False
-        _alpha = algo.utils.bonferonni_correct(alpha, len(covers), n_calib)
+        # all covers are corrected with Westfall-Young maxT after calibration
+        westfall_young = True
     print('n covers (', per_layer, leafs_only, '): ', len(covers), 'alpha:', _alpha, 'test size (ratio):', len(X_test), f"({test_size_ratio})", 'test size:' 'method:', method, 'dynamic:', dynamic, flush=True)
-    node_scores_calib = propagate_scores(X_calib, wordnet, id_to_node, max_levels_propagate)
-    node_scores_test = propagate_scores(X_test, wordnet, id_to_node, max_levels_propagate)
+    t0 = time.time()
+    propagate = propagate_scores_leaf_cover if propagation == 'leaf-cover' else propagate_scores
+    print('propagation:', propagation, flush=True)
+    node_scores_calib = propagate(X_calib, wordnet, id_to_node, max_levels_propagate)
+    node_scores_test = propagate(X_test, wordnet, id_to_node, max_levels_propagate)
+    t_propagate = time.time() - t0
 
     # calibrate on calibration set
+    t0 = time.time()
     calibrators = calibrate_covers_mockmodel(
         y_calib,
         _alpha,
@@ -124,11 +144,20 @@ def main(dataset,
         loss_approach=loss_approach,
         cp_method=cp_method,
     )
+    if westfall_young:
+        # the corrected predictors are calibrated on the max non-conformity
+        # score over all covers and are used with the nominal alpha; _alpha is
+        # the effective corrected alpha' (reported as bf_alpha)
+        calibrators, _alpha = westfall_young_correct(calibrators, alpha)
+        print('Westfall-Young corrected alpha:', _alpha, flush=True)
+    t_calibration = time.time() - t0
     # create prediction sets for test set
     if isinstance(beta, float):
-        covers, pss, costs, n_covered_leaves = optimize_mm(beta, node_scores_test, calibrators, class_nodes, _alpha, n_calib, tree, dynamic)
+        t0 = time.time()
+        covers, pss, costs, n_covered_leaves = optimize_mm(beta, node_scores_test, calibrators, class_nodes, alpha, n_calib, tree, dynamic)
+        t_optimization = time.time() - t0
         result_frame = pd.DataFrame({
-            'costs': costs, 
+            'costs': costs,
             'prediction_set_len': map(len, pss),
             'alpha': [alpha,] * len(pss),
             'bf_alpha': [_alpha,] * len(pss),
@@ -142,16 +171,32 @@ def main(dataset,
         mean_covered_leaves = np.array(n_covered_leaves).mean()
         print('costs:', min(costs), max(costs))
         print('ps sizes:', min(map(len, pss)), max(map(len, pss)), sum(map(len, pss))/len(pss))
-        print(f'mean covered leaves, {alpha}, {mean_covered_leaves}') 
+        print(f'mean covered leaves, {alpha}, {mean_covered_leaves}')
 
         # store in file
         result_frame.to_csv(output_file)
+
+        t_total = time.time() - t_start
+        print(f'timing (s) - covers: {t_covers:.3f}, propagate: {t_propagate:.3f}, calibration: {t_calibration:.3f}, optimization: {t_optimization:.3f}, total: {t_total:.3f}')
+        timing_frame = pd.DataFrame({
+            'alpha': [alpha],
+            'bf_alpha': [_alpha],
+            'beta': [beta],
+            't_covers': [t_covers],
+            't_propagate': [t_propagate],
+            't_calibration': [t_calibration],
+            't_optimization': [t_optimization],
+            't_total': [t_total],
+        })
+        timing_frame.to_csv(timing_output_path(output_file), index=False)
     else:
-        covers, pss, costs = optimize_mm_betas(beta, node_scores_test, calibrators, class_nodes, _alpha, n_calib, tree, dynamic)
+        t0 = time.time()
+        covers, pss, costs = optimize_mm_betas(beta, node_scores_test, calibrators, class_nodes, alpha, n_calib, tree, dynamic)
+        t_optimization = time.time() - t0
         open(output_file, 'w').close() # create empty file, or remove contents from file if it exists
         for i, b in enumerate(covers):
             result_frame = pd.DataFrame({
-                'costs': costs[b], 
+                'costs': costs[b],
                 'prediction_set_len': map(len, pss[b]),
                 'alpha': [alpha,] * len(pss[b]),
                 'bf_alpha': [_alpha,] * len(pss[b]),
@@ -171,6 +216,25 @@ def main(dataset,
             else:
                 header = False
             result_frame.to_csv(output_file, mode='a', header=header)
+
+        # optimize_mm_betas times all betas together, so the optimization
+        # time cannot be split per beta; report one row per beta with the
+        # same (shared) optimization time so it still matches result_frame's
+        # per-beta rows and can be joined/averaged the same way.
+        t_total = time.time() - t_start
+        print(f'timing (s) - covers: {t_covers:.3f}, propagate: {t_propagate:.3f}, calibration: {t_calibration:.3f}, optimization (all betas): {t_optimization:.3f}, total: {t_total:.3f}')
+        timing_frame = pd.DataFrame({
+            'alpha': [alpha] * len(covers),
+            'bf_alpha': [_alpha] * len(covers),
+            'beta': list(covers.keys()),
+            't_covers': [t_covers] * len(covers),
+            't_propagate': [t_propagate] * len(covers),
+            't_calibration': [t_calibration] * len(covers),
+            't_optimization': [t_optimization] * len(covers),
+            't_total': [t_total] * len(covers),
+        })
+        timing_frame.to_csv(timing_output_path(output_file), index=False)
+    print("timing output:", timing_output_path(output_file), 'written')
 
 
 if __name__ == '__main__':
