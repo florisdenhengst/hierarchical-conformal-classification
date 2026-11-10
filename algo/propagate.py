@@ -1,9 +1,16 @@
+import os
 import numpy as np
 import wn
 import functools
 import algo.no_cover
 from algo.utils import get_lca, descendants_or_ancestors, get_parents, max_synsets_depth, disk_cache
 import tqdm
+from joblib import Parallel, delayed
+
+# Not a function arg: disk_cache() hashes every argument to build its cache
+# key, so N_JOBS must stay out of the signature or identical runs would miss
+# the cache purely because of a parallelism-degree change.
+N_JOBS = int(os.environ.get("HCC_N_JOBS", "-1"))
 
 def propagate_ground_truths(
         ground_truths: np.typing.ArrayLike,
@@ -42,6 +49,34 @@ def propagate_scores_sample(
         parent_scores[parent] = sum(class_scores)
     return parent_scores
 
+def _propagate_scores_one(
+        i,
+        sample,
+        class_node_id_mapping,
+        id_class_node_mapping,
+        class_nodes,
+        levels,
+        return_per_level,
+        n_levels,
+    ):
+    initial_scores = {class_node_id_mapping[idx]: float(score) for idx, score in enumerate(sample)}
+    if return_per_level:
+        result = {levels: initial_scores}
+    else:
+        result = dict(initial_scores)
+    nodes_i = class_nodes
+    for level in range(levels)[::-1]:
+        aggregated_scores = propagate_scores_sample(sample, nodes_i, class_nodes, id_class_node_mapping, level)
+        if return_per_level:
+            result[level] = aggregated_scores
+        else:
+            result |= aggregated_scores
+        parents = get_parents(frozenset(nodes_i), level)
+        nodes_i = filter_nodes(parents)
+        if n_levels is not None and level <= n_levels:
+            break
+    return i, result
+
 @disk_cache()
 def propagate_scores(
         scores: np.typing.ArrayLike,
@@ -50,31 +85,24 @@ def propagate_scores(
         return_per_level=False,
         n_levels=None,
     )->np.typing.ArrayLike:
-    aggregate_scores = {}
     id_class_node_mapping = {idx: node_id for node_id, idx in class_node_id_mapping.items()}
     class_nodes = frozenset(class_node_id_mapping.values())
     # levels = wn.taxonomy.taxonomy_depth(wordnet, pos='n')
     levels = max_synsets_depth(class_nodes)
     print("propagating scores...")
-    i = 0
-    for sample in tqdm.tqdm(scores):
-        initial_scores =  {class_node_id_mapping[idx]: float(score) for idx, score in enumerate(sample)}
-        if return_per_level:
-            aggregate_scores[i] = {levels: initial_scores}
-        else:
-            aggregate_scores[i] = initial_scores
-        nodes_i = class_nodes
-        for level in range(levels)[::-1]:
-            aggregated_scores = propagate_scores_sample(sample, nodes_i, class_nodes, id_class_node_mapping, level)
-            if return_per_level:
-                aggregate_scores[i][level] = aggregated_scores
-            else:
-                aggregate_scores[i] |= aggregated_scores
-            parents = get_parents(frozenset(nodes_i), level)
-            nodes_i = filter_nodes(parents)
-            if n_levels is not None and level <= n_levels:
-                break
-        i += 1
+    # Each sample is independent (only plain data - floats, Synsets, dicts -
+    # crosses the boundary), so this is safe to run in separate processes,
+    # which gives real parallelism unlike a thread pool would (this loop is
+    # pure-Python/GIL-bound aside from the wn lookups).
+    results = Parallel(n_jobs=N_JOBS, backend="loky", return_as="generator")(
+        delayed(_propagate_scores_one)(
+            i, sample, class_node_id_mapping, id_class_node_mapping, class_nodes, levels, return_per_level, n_levels
+        )
+        for i, sample in enumerate(scores)
+    )
+    aggregate_scores = {}
+    for i, result in tqdm.tqdm(results, total=len(scores)):
+        aggregate_scores[i] = result
     return aggregate_scores
 
 @functools.cache
