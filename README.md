@@ -4,8 +4,10 @@ Code for the NeurIPS 2026 paper *Hierarchical Conformal Classification*. HCC pro
 sets that may contain both leaf classes and internal nodes of a class hierarchy (a tree or a DAG), trading
 off set size against specificity while keeping a finite-sample coverage guarantee.
 
-- Paper: <link>
-- Data (classifier scores, splits and taxonomies): https://huggingface.co/datasets/florisdh/hierarchical-conformal-classification
+- Poster: [NeurIPS 2026](https://neurips.cc/virtual/2026/loc/paris/poster/150172)
+- Preprint: [ArXiv](https://arxiv.org/abs/2508.13288)
+- Data (classifier scores, splits and taxonomies): [HuggingFace](https://huggingface.co/datasets/florisdh/hierarchical-conformal-classification)
+- Webpage: [link](https://florisdh.nl/hierarchical-conformal-classification)
 
 ## Setup
 Requires Python 3.10.
