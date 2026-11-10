@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hierarchical Conformal Classification</title>
+<meta name="description" content="Hierarchical Conformal Classification (HCC): conformal prediction sets built from nodes at any level of a class hierarchy, with finite-sample leaf-level coverage guarantees. NeurIPS 2026.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] },
+    options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+  };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>Hierarchical Conformal Classification</h1>
+
+  <p class="venue">
+    <a href="https://neurips.cc/virtual/2026/loc/paris/poster/150172">NeurIPS 2026</a>
+  </p>
+
+  <p class="authors">
+    <span><a href="https://florisdh.nl">Floris den Hengst<sup>1</sup></a></span>
+    <span><a href="https://inesblin.github.io">In&egrave;s Blin<sup>2</sup></a></span>
+    <span><a href="https://majeed7.github.io/">Majid Mohammadi<sup>3</sup></a></span>
+    <span><a href="https://ihteshamshah.github.io/">Syed Ihtesham Shah<sup>1</sup></a></span>
+    <span><a href="https://www.linkedin.com/in/taraneh-younesian/">Taranah Younesian<sup>1</sup></a></span>
+  </p>
+
+  <p class="affiliations">
+    <sup>1</sup>Vrije Universiteit Amsterdam &middot;
+    <sup>2</sup>Sony CSL Paris &middot;
+    <sup>3</sup>Leiden University Medical Center
+  </p>
+
+  <nav class="pill-row" aria-label="Resources">
+    <ul class="nav nav-pills nav-justified">
+      <li class="nav-item">
+        <a href="https://arxiv.org/abs/2508.13288" target="_blank" rel="noopener">
+          <h3><i class="bi bi-file-earmark" aria-hidden="true"></i></h3>
+          Preprint
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://github.com/florisdenhengst/hierarchical-conformal-classification" target="_blank" rel="noopener">
+          <h3><i class="bi bi-github" aria-hidden="true"></i></h3>
+          Code
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://huggingface.co/datasets/florisdh/hcc" target="_blank" rel="noopener">
+          <h3><i class="bi bi-database" aria-hidden="true"></i></h3>
+          Data
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="video">
+    <iframe src="https://archive.org/embed/talk_slides_with_audio"
+            title="Hierarchical Conformal Classification &mdash; talk" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+  </section>
+
+  <section id="abstract">
+    <h2>Abstract</h2>
+    <p>
+      Conformal prediction provides reliable uncertainty quantification by generating prediction sets
+      with finite-sample coverage guarantees, yet it typically ignores hierarchical relationships
+      between classes. We introduce Hierarchical Conformal Classification (HCC), a framework that
+      integrates class hierarchies into the structure and semantics of prediction sets. HCC uses a
+      constrained optimization problem formulation to produce prediction sets composed of nodes at
+      various hierarchy levels while maintaining rigorous coverage guarantees. To ensure computational
+      efficiency, we prove that a restricted subset of well-structured candidate solutions is
+      sufficient to maintain coverage and approximate optimality. Empirical evaluations across audio,
+      image, and text benchmarks, alongside a preliminary user study, demonstrate that HCC outperforms
+      state-of-the-art methods and that hierarchical prediction sets align better with human
+      preferences.
+    </p>
+  </section>
+
+  <p class="highlight">
+    HCC uses the hierarchy of the classification labels to improve conformal classification usability while maintaining finite-sample coverage guarantees. <br/> It produces prediction sets that are more compact, more interpretable, and better aligned with the domain semantics.
+  </p>
+
+  <figure class="teaser">
+    <img src="images/teaser.png"
+         alt="A WordNet subtree: reptile above lizard, with the leaves agama, alligator lizard, green lizard and whiptail. HCC predicts the single node {lizard}; standard conformal prediction predicts all four leaves.">
+    <figcaption>
+      Both prediction sets cover the ground truth. HCC returns the parent node; standard conformal
+      prediction has to enumerate its children.
+    </figcaption>
+  </figure>
+
+  <section id="background">
+    <h2>Background</h2>
+
+    <p>
+      Conformal prediction (CP) turns any scoring model \(\hat{f}\) into a set-valued predictor. Given a
+      user-specified error level \(\alpha\), it returns a set \(C(x)\) of labels that is guaranteed to
+      contain the ground truth with high probability:
+    </p>
+
+    <p>
+      \[ \mathbb{P}\big(Y_{n+1} \in C(X_{n+1})\big) \;\geq\; 1 - \alpha . \]
+    </p>
+
+    <p>
+      Split CP gets there in two steps. On a held-out calibration set
+      \(\{(x_i, y_i)\}_{i=1}^{n}\) it computes a <em>nonconformity score</em> \(s(x_i, y_i)\).
+      This score is low when the model finds the true label plausible, for instance \(s(x,y) = 1 - \hat{f}(x)_y\).
+      Split CP takes the threshold
+      \(\hat{q}\), the \(\lceil (n+1)(1-\alpha) \rceil / n\) empirical quantile of those scores. At test
+      time it keeps every label the model scores at least as plausibly:
+    </p>
+
+    <p>
+      \[ C(x) \;=\; \{\, y \in \mathcal{Y} \;:\; s(x, y) \leq \hat{q} \,\}. \]
+    </p>
+
+    <figure>
+      <img src="images/conformal.png"
+           alt="Two panels. Left: a histogram of calibration nonconformity scores with a red vertical line marking the threshold q-hat, below which 90 percent of the scores fall. Right: per-class nonconformity scores for one test input as horizontal bars; the four classes whose score falls below q-hat are highlighted and form the prediction set.">
+      <figcaption>
+        Split conformal prediction. The threshold \(\hat{q}\) is set once on calibration data (a) and
+        then applied to every test input (b). The guarantee is finite-sample and distribution-free: it
+        needs only exchangeability, not a correct model.
+      </figcaption>
+    </figure>
+
+    <p>
+      Labels, however, are rarely flat. Medical diagnoses, fraud types, music genres and document topics
+      all come with a taxonomy, usually a directed acyclic graph (DAG). For example, the ImageNet labels are nodes of the WordNet taxonomy, which is a DAG.
+      That structure expresses the domain semantics for some set of human users, which standard CP disregards.
+      HCC on the other hand, uses the taxonomy to dynamically summarize large (subsets of) the prediction set in order to improve interpretability and usability while maintaining finite-sample coverage guarantees.
+    </p>
+  </section>
+
+  <section id="problem">
+    <h2>Problem</h2>
+
+    <p>
+      Write the taxonomy as a DAG \(\mathcal{T} = (\mathcal{V}, \mathcal{E})\) whose leaves
+      \(\mathcal{L} \subseteq \mathcal{V}\) are the class labels, and let
+      \(\mathrm{leaf\text{-}cov}(\mathcal{N})\) be the leaves reachable from a set of nodes
+      \(\mathcal{N} \subseteq \mathcal{V}\). We interpret a flat prediction set containing e.g. the four known kinds of lizard as 
+      predicting the internal node `lizard' instead. In order to operationalise this intuition, we equip our predictors with the ability to output prediction sets that may flexibly include internal nodes as well as leaves:
+    </p>
+
+    <p>
+      \[ \mathbb{P}\big(Y_{n+1} \in \mathrm{leaf\text{-}cov}(\mathcal{N}(X_{n+1}))\big)
+         \;\geq\; 1 - \alpha . \]
+    </p>
+
+    <p>
+      That immediately raises a trade-off. Predicting the root of \(\mathcal{T}\) satisfies any \(\alpha\) yet is entirely uninformative.
+      Predictiong leaves exclusively is maximally specific but may produce large prediction sets.
+      We quantify these two competing desiderate as follows. The <em>size</em> \(|\mathcal{N}|\) of the prediction set, and its
+      <em>specificity</em>, i.e. the number \(|\mathrm{leaf\text{-}cov}(\mathcal{N})|\) of leaves reachable or <em>covered</em> by its nodes jointly.
+    </p>
+
+    <p>
+      Existing hierarchy-aware conformal methods each give up something. Most set-valued approaches for
+      hierarchies are restricted to trees rather than DAGs. Hierarchical risk control bounds the distance
+      between prediction and true label, and does not guarantee leaf-level coverage. The closest method,
+      <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/1868a3c73d0d2a44c42458575fa8514c-Abstract-Conference.html">conformal structured prediction</a>, needs a user-specified bound \(M\) on the nominal set size, relies
+      on a predefined threshold grid that must contain the optimal threshold, and solves an integer
+      program whose cost grows quickly with the size and depth of the taxonomy.
+    </p>
+  </section>
+
+  <section id="approach">
+    <h2>Hierarchical conformal classification</h2>
+
+    <p>
+      HCC states the trade-off between compactness i.e. nominal prediction set size and specificity i.e. reachable or <em>covered</em> leaves as a constrained optimization problem: among all hierarchy-consistent
+      candidate sets that satisfy leaf-level coverage, return the candidate with lowest cost under:
+    </p>
+
+    <p>
+      \[ \min_{\mathcal{N}} \;\; |\mathcal{N}| \;+\; \beta \,
+         \big|\mathrm{leaf\text{-}cov}(\mathcal{N})\big| , \]
+    </p>
+
+    <p>
+      where the single hyperparameter \(\beta \geq 0\) controls for nominal prediction set size and covered leaves.
+      At \(\beta = 0\) the root is optimal and as \(\beta\) grows, HCC prefers candidates composed of nodes closer to the leaves.
+    </p>
+
+    <p>
+      Solving this optimization problem naively means searching all of \(2^{|\mathcal{V}|}\). We prove that it suffices to
+      search a far smaller, well-structured family: the <em>non-overlapping leaf covers</em>. These are all sets
+      of nodes, taken from any level, that together reach every leaf exactly once. The HCC algorithm consists of three steps:
+    </p>
+
+    <ol>
+      <li>enumerate the leaf covers of \(\mathcal{T}\) and propagate calibration scores and ground truth labels up the hierarchy;</li>
+      <li>calibrate one conformal predictor per cover, with a shared Westfall-Young maxT threshold
+          \(\hat{q}\) so that coverage guarantees are upheld in the face of multiple comparisons and test-time selection;</li>
+      <li>at inference, evaluate the relevant candidates against the objective and select the one with minimal cost. During this step, HCC employs an additional
+        dynamic pruning based on the input, so that only solutions "in between" flat CP on the leaves and the lowest common ancestor of the resulting prediction set are evaluated.</li>
+    </ol>
+
+    <figure>
+      <img src="images/method.png"
+           alt="Left: a DAG of dishes, with breakfast, sandwich and salad highlighted as one leaf cover. Right: three candidate prediction sets with their size, number of covered leaves and resulting cost; the single internal node {lunch} is the cheapest at beta = 0.5.">
+      <figcaption>
+        HCC in three steps, on a toy taxonomy. Because candidates may mix levels, the winner is often a
+        single internal node that stands in for a whole group of leaves.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section id="results">
+    <h2>Results</h2>
+
+    <p>
+      We evaluate on three hierarchical benchmarks: text (<code>dbp</code>, DBpedia-14 with a BERT
+      classifier), images (<code>img</code>, ImageNet over WordNet) and audio (<code>gtz</code>, GTZAN
+      genres). We compare against standard CP on the leaves, a lowest-common-ancestor baseline (LCA) and
+      conformal structured prediction (CSP).
+    </p>
+
+    <p>
+      By evaluating HCC at various \(\beta\) values, we trace the frontier of trade-offs between size and covered leaves in between the flat CP and LCA baselines.
+      LCA is the \(\beta = 0\) endpoint, and on ImageNet standard CP
+      lands on the large-\(\beta\) end of the same curve. CSP sits off the frontier, where HCC is better
+      on both axes at once where it meets coverage requirements (on <code>dbp</code> it misses coverage).
+    </p>
+
+    <figure>
+      <img src="images/frontier.png"
+           alt="Three panels, one per dataset, plotting mean prediction set size against the mean number of covered leaves. In each panel the HCC beta sweep forms a curve with the reported operating point marked by a star on the curve, and the baselines standard CP, LCA and CSP appear as single markers; CSP on dbp is drawn hollow because it misses its coverage guarantee.">
+      <figcaption>
+        The frontier of trade-offs between size and covered leaves. Each curve is one HCC run for a particular \(\beta\); stars indicate
+        the operating point reported in the main results in the paper. Down and to the left is better. The hollow marker misses its coverage guarantee.
+      </figcaption>
+    </figure>
+
+    <ul>
+      <li>
+        <strong>Smaller, more specific sets.</strong> On ImageNet, HCC answers with 3.7 nodes covering
+        86 leaves, where standard CP needs 11.0 labels and CSP covers 270 leaves with 5.0 nodes on average.
+      </li>
+      <li>
+        <strong>Coverage holds.</strong> HCC meets its target on all three datasets and for every
+        \(\alpha\) we tested; CSP misses it on <code>dbp</code>. Ablating either the Westfall-Young
+        correction or the hierarchical score breaks coverage, showing relevance of both components.
+      </li>
+      <li>
+        <strong>It scales.</strong> On ImageNet HCC runs about 80&times; faster than CSP
+        (10<sup>3</sup> s against 8&nbsp;&times;&nbsp;10<sup>4</sup> s), and an order of magnitude faster
+        again with cached inference.
+      </li>
+      <li>
+        <strong>People prefer the sets.</strong> In a preliminary user study over 500 samples per
+        dataset with differing prediction sets, author annotators significantly preferred HCC over standard CP in 57% of cases on <code>dbp</code> and 71% on <code>img</code> (binomial test,
+        \(p &lt; 10^{-4}\)).
+      </li>
+    </ul>
+  </section>
+
+  <section id="further-reading">
+    <h2>Further reading</h2>
+    <ul>
+      <li>
+        Angelopoulos &amp; Bates,
+        <a href="https://arxiv.org/abs/2107.07511">A Gentle Introduction to Conformal Prediction and
+        Distribution-Free Uncertainty Quantification</a> (2021) &mdash; the standard entry point.
+      </li>
+      <li>
+        Angelopoulos, Bates, Fisch, Lei &amp; Schuster,
+        <a href="https://arxiv.org/abs/2208.02814">Conformal Risk Control</a> (ICLR 2024).
+      </li>
+      <li>
+        Mortier, H&uuml;llermeier, Dembczy&#324;ski &amp; Waegeman,
+        <a href="https://arxiv.org/abs/2203.06676">Set-valued prediction in hierarchical classification
+        with constrained representation complexity</a> (UAI 2022).
+      </li>
+      <li>
+        Mortier et al.,
+        <a href="https://arxiv.org/abs/2501.19038">Conformal Prediction in Hierarchical Classification
+        with Constrained Representation Complexity</a> (2025).
+      </li>
+      <li>
+        Zhang, Li &amp; Bastani,
+        <a href="https://arxiv.org/abs/2410.06296">Conformal Structured Prediction</a> (ICLR 2025) &mdash;
+        the CSP baseline.
+      </li>
+      <li>
+        Miller, <a href="https://wordnet.princeton.edu/">WordNet</a> &mdash; the lexical hierarchy behind
+        the ImageNet taxonomy.
+      </li>
+    </ul>
+  </section>
+
+  <section id="citation">
+    <h2>Citation</h2>
+    <pre><code id="bibtex">@inproceedings{denhengst2026hierarchical,
+  title     = {Hierarchical Conformal Classification},
+  author    = {den Hengst, Floris and Blin, In{\`e}s and Mohammadi, Majid and
+               Shah, Syed Ihtesham and Younesian, Taranah},
+  booktitle = {Advances in Neural Information Processing Systems},
+  publisher = {Curran Associates, Inc.},
+  volume    = {39, Main Conference},
+  year      = {2026}
+}</code></pre>
+    <p><button type="button" data-copy="bibtex">Copy BibTeX</button></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>
+    <a href="https://github.com/florisdenhengst/hierarchical-conformal-classification">Code</a> &middot;
+    <a href="https://arxiv.org/abs/2508.13288">Preprint</a> &middot;
+    <a href="https://huggingface.co/datasets/florisdh/hcc">Data</a>
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

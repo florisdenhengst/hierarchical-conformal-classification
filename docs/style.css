@@ -1,0 +1,165 @@
+/* Minimal stylesheet: keep the browser's default typography, only constrain
+   the measure and style the few things defaults don't cover (nav pills,
+   the video embed, figures). */
+
+body {
+  max-width: 44em;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+h1 {
+  margin-bottom: 0.3em;
+  text-align: center;
+}
+
+header p {
+  margin: 0.4em 0;
+}
+
+.venue,
+.authors,
+.affiliations {
+  text-align: center;
+}
+
+.authors span {
+  display: inline-block;
+  margin: 0 0.5em;
+  white-space: nowrap;
+}
+
+.affiliations {
+  font-size: 0.9em;
+}
+
+/* Nav pills: the same setup as florisdh.nl/cicc — Bootstrap 5 nav-pills markup
+   with Bootstrap Icons. Only the handful of Bootstrap rules this nav needs are
+   copied here, so the rest of the page keeps the browser's defaults. */
+.pill-row {
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-pills {
+  width: 100%;
+  max-width: 22em;
+}
+
+.nav-justified > .nav-item {
+  flex-basis: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.nav-item a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+.nav-pills li:hover {
+  background-color: lightgray;
+}
+
+.nav-item h3 {
+  margin: 0;
+  font-weight: 300;
+  line-height: 1.1;
+  font-size: 26px;
+  font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+}
+
+/* Video */
+.video {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.video iframe {
+  width: 560px;
+  max-width: 100%;
+  aspect-ratio: 560 / 384;
+  height: auto;
+  border: 0;
+}
+
+/* Figures */
+figure {
+  margin: 2em 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+figcaption {
+  font-size: 0.9em;
+  margin-top: 0.8em;
+}
+
+/* The one-sentence takeaway */
+.highlight {
+  font-size: 1.25em;
+  line-height: 1.4;
+  border-left: 4px solid currentColor;
+  padding-left: 0.8em;
+  margin: 2em 0;
+}
+
+footer {
+  margin-top: 3em;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/* Sections */
+section {
+  margin-top: 2.5em;
+}
+
+h2 {
+  margin-bottom: 0.4em;
+}
+
+h3 {
+  margin-bottom: 0.3em;
+  font-size: 1.05em;
+}
+
+li {
+  margin: 0.4em 0;
+}
+
+/* Displayed math can be wider than the measure on a phone */
+mjx-container[display="true"] {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* BibTeX */
+pre {
+  overflow-x: auto;
+  padding: 1em;
+  background: #f6f6f6;
+  font-size: 0.85em;
+  line-height: 1.4;
+}
+
+button {
+  font: inherit;
+  padding: 0.3em 1em;
+  cursor: pointer;
+}
